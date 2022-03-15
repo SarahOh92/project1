@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <link rel="stylesheet" href="css/board.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="header_top_line">
+                <div class="inner clearfix">
+                    <div class="council_site fl">
+                        <a href="#">성남시의회</a>
+                    </div>
+                    <div class="right_area fr">
+                        <div class="login_area fl">
+                            <ul>
+                                <li class="fl">
+                                    <a href="#">로그인</a>
+                                </li>
+                                <li class="fl">
+                                    <div class="login_ico"></div>
+                                </li>
+                                <li class="fl">
+                                    <a href="#">회원가입</a>
+                                </li>
+                                <li class="fl">
+                                    <div class="login_ico"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="language_area fl">
+
+                            <a href="#">Language</a>
+                            <!-- <button type="button" class="language_btn" title="언어선택 열기">
+                                Language
+                            </button> -->
+                            <!-- <div class="lang_list">
+                                <ul>
+                                    <li>
+                                        <a href="#">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">中國語</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">日本語</a>
+                                    </li>
+                                </ul>
+                                <button type="button" class="close" title="언어선택 닫기">닫기</button>
+                            </div> -->
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <div id="header_logo_line">
+                <div class="inner clearfix">
+                    <h1>
+                        <a href="index.html" class="header_logo fl ir_pm">성남시청로고</a>
+                    </h1>
+                    <div class="search_box_wrap fl">
+                        <div class="search_box fl">
+                            <select name="collection" class="collection fl">
+                                <option value="all">통합검색</option>
+                                <option value="site">관련사이트</option>
+                                <option value="directory">디렉토리</option>
+                                <option value="bbs">게시판</option>
+                                <option value="contents">웹페이지</option>
+                                <option value="multimedia">멀티미디어</option>
+                                <option value="staff">직원/업무</option>
+                            </select>
+                            <input type="text" class="keyword_input fl" title="검색어를 입력하세요." value="검색어를 입력하세요">
+                            <a href="#" class="search_btn fl">
+                                <div class="search_btn_ico fl ir_pm">검색</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="keyword_area fl">
+                        <h5 class="fl">인기검색어</h5>
+                        <ul class="keyword_slider_btn">
+                            <li><a href="#" class="slider_prev fl ir_pm">이전</a></li>
+                            <li><a href="#" class="slider_next fr ir_pm">다음</a></li>
+                        </ul>
+                        <div class="keyword_list fl">
+                            <div class="keyword_wrap">
+                                <div class="list_wrap claerfix">
+                                    <div class="list fl"><a href="#">격리통지서</a></div>
+                                    <div class="list fl"><a href="#">격리지원금</a></div>
+                                    <div class="list fl"><a href="#">채용공고</a></div>
+                                    <div class="list fl"><a href="#">성남종합스포츠센터</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gnb_line">
+                <div class="inner">
+                    <ul class="gnb_area clearfix">
+                        <li class="gnb1 fl">
+                            <a href="#">성남소개</a>
+                            <div class="width100">
+                                <ul class="m_width clearfix">
+                                    <li class="fl">
+                                        <a href="#">성남의상징물</a>
+                                        <ul>
+                                            <li><a href="#">시의상징</a></li>
+                                            <li><a href="#">시의동식물</a></li>
+                                            <li><a href="#">시민의노래(시가)</a></li>
+                                            <li><a href="#">시정테마</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">일반현황</a>
+                                        <ul>
+                                            <li><a href="#">기본현황</a></li>
+                                            <li><a href="#">위치</a></li>
+                                            <li><a href="#">면적</a></li>
+                                            <li><a href="#">지형</a></li>
+                                            <li><a href="#">인구</a></li>
+                                            <li><a href="#">자동차</a></li>
+                                            <li><a href="#">행정구역</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">성남역사</a>
+                                        <ul>
+                                            <li><a href="#">성남시연혁</a></li>
+                                            <li><a href="#">성남시사(40년사)</a></li>
+                                            <li><a href="#">8.10상님민권운동</a></li>
+                                            <li><a href="#">역대시장</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">시청안내</a>
+                                        <ul>
+                                            <li><a href="#">총괄조직도</a></li>
+                                            <li><a href="#">청사안내</a></li>
+                                            <li><a href="#">청사개방시설안내</a></li>
+                                            <li><a href="#">오시는길</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">교류도시</a>
+                                        <ul>
+                                            <li><a href="#">국외</a></li>
+                                            <li><a href="#">국내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl"><a href="#">수상내역</a></li>
+                                    <li class="fl"><a href="#" class="blank">성남시생활지도안내</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- // 성남소개 -->
+                        <li class="gnb2 fl">
+                            <a href="board/board.html">시정소식</a>
+                            <div class="width100">
+                                <ul class="m_width cf">
+                                    <li class="fl"><a href="#">새소식</a></li>
+                                    <li class="fl"><a href="#">행사/강좌/공모</a></li>
+                                    <li class="fl">
+                                        <a href="#">고시공고</a>
+                                        <ul>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">고시</a></li>
+                                            <li><a href="#">입찰공고</a></li>
+                                            <li><a href="#">입법예고</a></li>
+                                            <li><a href="#">일반공고</a></li>
+                                            <li><a href="#">개인정보제3자제공</a></li>
+                                            <li><a href="#">개인정보처리위탁</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">채용정보</a>
+                                        <ul>
+                                            <li><a href="#">채용공고</a></li>
+                                            <li><a href="#">채용/시험</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl"><a href="#" class="blank">성남시의회입법예고</a></li>
+                                    <li class="fl"><a href="#">보도자료</a></li>
+                                    <li class="fl"><a href="#">브리핑(주요시정알림)</a></li>
+                                    <li class="fl"><a href="#">언론보도해명</a></li>
+                                    <li class="fl"><a href="#">성남시보</a></li>
+                                    <li class="fl"><a href="#">무연분묘개장공고</a></li>
+                                    <li class="fl">
+                                        <a href="#">도정소식</a>
+                                        <ul>
+                                            <li><a href="#">보도게시판</a></li>
+                                            <li><a href="#">기사게시판</a></li>
+                                            <li><a href="#">경기도민생범죄통계</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl"><a href="#">시정소식지비전성남</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- // 시정소식 -->
+                        <li class="gnb3 fl">
+                            <a href="#">전자민원</a>
+                            <div class="width100">
+                                <ul class="m_width clearfix">
+                                    <li class="fl">
+                                        <a href="#">민원상담</a>
+                                        <ul>
+                                            <li><a href="#">민원상담</a></li>
+                                            <li><a href="#">나의민원보기</a></li>
+                                            <li><a href="#">(구)전자민원열람</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">민원안내</a>
+                                        <ul>
+                                            <li><a href="#">민원발급</a></li>
+                                            <li><a href="#">민원신고</a></li>
+                                            <li><a href="#">편리한서비스</a></li>
+                                            <li><a href="#">민원접수대기현황</a></li>
+                                            <li><a href="#">민원수수료</a></li>
+                                            <li><a href="#">민원인권리선언문</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">여권민원</a>
+                                        <ul>
+                                            <li><a href="#">여권민원접수/장소</a></li>
+                                            <li><a href="#">야간여권접수사전예약</a></li>
+                                            <li><a href="#">여권민원대기현황</a></li>
+                                            <li><a href="#">여권업무</a></li>
+                                            <li><a href="#">여권민원서식</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl"><a href="#">민원편람(서식)</a></li>
+                                    <li class="fl"><a href="#">민원법규</a></li>
+                                    <li class="fl">
+                                        <a href="#">행정서비스헌장</a>
+                                        <ul>
+                                            <li><a href="#">행정서비스헌장</a></li>
+                                            <li><a href="#">행정서비스공통부문이행표준</a></li>
+                                            <li><a href="#">분야별이행표준</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">정보통신사용전검사</a>
+                                        <ul>
+                                            <li><a href="#">사용전검사안내</a></li>
+                                            <li><a href="#">사용전검사양식</a></li>
+                                            <li><a href="#">처리현황조회/필증발급</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl"><a href="#">고객상담콜센터</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- // 전자민원 -->
+                        <li class="gnb4 fl">
+                            <a href="#">시민참여</a>
+                            <div class="width100">
+                                <ul class="m_width clearfix">
+                                    <li class="fl">
+                                        <a href="#">온라인신청</a>
+                                        <ul class="fl">
+                                            <li><a href="#">다자녀가구대학생등록지원</a></li>
+                                            <li><a href="#">청년주택임차보증금이자지원</a></li>
+                                            <li><a href="#">소상공인방역지원금행정명령이행확인서</a></li>
+                                            <li><a href="#">라돈측정기대여</a></li>
+                                            <li><a href="#">다자녀가구전세자금대출이자지원</a></li>
+                                            <li><a href="#">교복지원금</a></li>
+                                        </ul>
+                                        <ul class="fl">
+                                            <li><a href="#">정책공론화시민참여단모집</a></li>
+                                            <li><a href="#">소상공인경영안정비지원</a></li>
+                                            <li><a href="#">대학생지방행정체험</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">신고센터</a>
+                                        <ul class="fl">
+                                            <li><a href="#">불친절공무원신고</a></li>
+                                            <li><a href="#">공직부조리신고</a></li>
+                                            <li><a href="#">공익신고센터</a></li>
+                                            <li><a href="#">보조금부정사용신고</a></li>
+                                            <li><a href="#">교통불편신고</a></li>
+                                            <li><a href="#">불법중개행위신고</a></li>
+                                            <li><a href="#">부동산실거래가위반신고</a></li>
+                                        </ul>
+                                        <ul class="fl">
+                                            <li><a href="#">토지거래허가위반신고</a></li>
+                                            <li><a href="#">식품안전소비자신고</a></li>
+                                            <li><a href="#">환경오염신고</a></li>
+                                            <li><a href="#">유기동물신고</a></li>
+                                            <li><a href="#">탈루은닉재산신고</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">제안마당</a>
+                                        <ul>
+                                            <li><a href="">제안제도안내</a></li>
+                                            <li><a href="">제안신청하기</a></li>
+                                            <li><a href="">나의제안</a></li>
+                                            <li><a href="">심사결과</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl"><a href="#">칭찬합시다</a></li>
+                                    <li class="fl"><a href="#">자유게시판</a></li>
+                                    <li class="fl"><a href="#">설문조사</a></li>
+                                    <li class="fl"><a href="#">선거인명부열람</a></li>
+                                    <li class="fl">
+                                        <a href="#">입법예고의견제출</a>
+                                        <ul>
+                                            <li><a href="#">입법예고의견제출</a></li>
+                                            <li><a href="#">(구)입법예고 의견열림</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">공공시설대관</a>
+                                        <ul>
+                                            <li><a href="#">회의실대관</a></li>
+                                            <li><a href="#">공감갤러리대관</a></li>
+                                            <li><a href="#">공원시설물대관</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">규제개혁/적극행정</a>
+                                        <ul>
+                                            <li><a href="#">규제개혁</a></li>
+                                            <li><a href="#">적극행정</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">반부패청렴성남</a>
+                                        <ul>
+                                            <li><a href="#">복지/보조금부정신고</a></li>
+                                            <li><a href="#">청탁금지법위반신고</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">시민옴부즈만</a>
+                                        <ul>
+                                            <li><a href="#">시민옴부즈만소개</a></li>
+                                            <li><a href="#">고충민원처리안내</a></li>
+                                            <li><a href="#">고충민원신청</a></li>
+                                            <li><a href="#">고충민원처리사례</a></li>
+                                            <li><a href="#">운영상황공표</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">시정모니터</a>
+                                        <ul>
+                                            <li><a href="#">모니터소개</a></li>
+                                            <li><a href="#">운영조례</a></li>
+                                            <li><a href="#">로그인/로그아웃</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //시민참여 -->
+                        <li class="gnb5 fl">
+                            <a href="#">정보공개</a>
+                            <div class="width100">
+                                <ul class="m_width clearfix">
+                                    <li class="fl">
+                                        <a href="#">시정정보</a>
+                                        <ul>
+                                            <li><a href="#">주요업무계획</a></li>
+                                            <li><a href="#">달라지는제도및시책</a></li>
+                                            <li><a href="#">시정백서</a></li>
+                                            <li><a href="#">성남비전장기종합발전계획</a></li>
+                                            <li><a href="#">정책실명제</a></li>
+                                            <li><a href="#">성과관리결과공시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">행정정보</a>
+                                        <ul class="fl">
+                                            <li><a href="#">정보공개제도</a></li>
+                                            <li><a href="#">사전정보공표</a></li>
+                                            <li><a href="#">정보목록</a></li>
+                                            <li><a href="#">원문정보공개</a></li>
+                                            <li><a href="#">정보공개청구(신청/확인)</a></li>
+                                            <li><a href="#">업무추진비공개</a></li>
+                                            <li><a href="#">상품권구매/사용내역공개</a></li>
+                                        </ul>
+                                        <ul class="fl">
+                                            <li><a href="#">조직정보공개</a></li>
+                                            <li><a href="#">인사통계</a></li>
+                                            <li><a href="#">행정처분공개</a></li>
+                                            <li><a href="#">공공발주사업공개</a></li>
+                                            <li><a href="#">민간전문가</a></li>
+                                            <li><a href="#">정책연구</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">재정정보</a>
+                                        <ul>
+                                            <li><a href="#">예산서</a></li>
+                                            <li><a href="#">재정정보공개</a></li>
+                                            <li><a href="#">결산현황</a></li>
+                                            <li><a href="#">재정공시</a></li>
+                                            <li><a href="#">예산의성과계획서</a></li>
+                                            <li><a href="#">중기지방재정계획</a></li>
+                                            <li><a href="#">투자심사</a></li>
+                                            <li><a href="#">기금운용현황</a></li>
+                                            <li><a href="#">지방공기업경영정보</a></li>
+                                            <li><a href="#">지방출자/출연기관경영정보</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="#">청렴성남</a>
+                                        <ul>
+                                            <li><a href="#">청렴나눔방</a></li>
+                                            <li><a href="#">금지된금품신고처리현황</a></li>
+                                            <li><a href="#">부패공직자처리현황</a></li>
+                                            <li><a href="#">감사정보공개</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl"><a href="#">부서별공개자료실</a></li>
+                                    <li class="fl"><a href="#">공공데이터개방</a></li>
+                                    <li class="fl"><a href="#">계약정보</a></li>
+                                    <li class="fl"><a href="#">성남통계정보</a></li>
+                                    <li class="fl"><a href="#">자치법규</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- // 정보공개 -->
+                        <li class="gnb6 fl">
+                            <a href="#">분야별정보</a>
+                            <div class="width100">
+                                <ul class="m_width clearfix">
+                                    <li class="fl"><a href="#">복지</a></li>
+                                    <li class="fl"><a href="#">문화체육</a></li>
+                                    <li class="fl"><a href="#">공원</a></li>
+                                    <li class="fl"><a href="#">교육</a></li>
+                                    <li class="fl"><a href="#">일자리</a></li>
+                                    <li class="fl"><a href="#">경제</a></li>
+                                    <li class="fl"><a href="#">성남사랑상품권</a></li>
+                                    <li class="fl"><a href="#">기업</a></li>
+                                    <li class="fl"><a href="#">세금</a></li>
+                                    <li class="fl"><a href="#">안전</a></li>
+                                    <li class="fl"><a href="#">교통</a></li>
+                                    <li class="fl"><a href="#">차량등록</a></li>
+                                    <li class="fl"><a href="#">환경위생</a></li>
+                                    <li class="fl"><a href="#">수도</a></li>
+                                    <li class="fl"><a href="#">도시</a></li>
+                                    <li class="fl"><a href="#">디자인</a></li>
+                                    <li class="fl"><a href="#">도시정비</a></li>
+                                    <li class="fl"><a href="#">주택/건축/부동산</a></li>
+                                    <li class="fl"><a href="#">건강도시</a></li>
+                                    <li class="fl"><a href="#">장래문화</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="main_sitemap fl">
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="board_wrap">
+            <h2>시정소식</h2>
+            <div class="first clearfix">
+                <div class="fl"><span>번호</span></div>
+                <div class="fl title"><span>제목</span></div>
+                <div class="fl"><span> 등록일</span></div>
+                <div class="fl"><span>조회수</span></div>
+                <div class="fl"><span>작성부서</span></div>
+            </div>
+            <div class="clearfix">
+                <!-- input을 넣을꺼면 html에서 항상 위에 있어야 한다 -->
+                <input type="radio" id="click10" name="board">
+                <div class="fl"><span class="notice">공지</span></div>
+                <div class="fl title left"> <label for="click10">성남시 홈페이지 디지털원패스 이용안내</label></div>
+                <div class="fl">2021-09-01</div>
+                <div class="fl">670</div>
+                <div class="fl">정보통신과</div>
+                <div class="content_wrap">
+                    <div class="subject">디지털원패스 이용안내</div>
+                    <div class="content">디지털원패스란 하나의 아이디로 편리하게 전자정부 사이트를 이용할 수 있는 서비스입니다. 디털 원패스를 통한 이용 방법은 아래와 같습니다.<br /> 
+                    1. 디지털원패스 회원가입<br />
+                    2. 디지털원패스 로그인 이용방법</div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <input type="radio" id="click09" name="board">
+                <div class="fl"><span class="notice">공지</span></div>
+                <div class="fl title left"> <label for="click09">성남시 홈페이지 회원 재동의 안내</label></div>
+                <div class="fl">2020-12-01</div>
+                <div class="fl">1,524</div>
+                <div class="fl">정보통신과</div>
+                <div class="content_wrap">
+                    <div class="subject">회원 재동의 안내</div>
+                    <div class="content">
+                        성남시는 개인정보보법 및 표준개인정보보호지침에 따라 개인정보를 보호하고, 불필요한 개인정보 보관을 최소화하기 위해 회원가입 2년 주기로 성남시 홈페이지의 회원정보 보유에 대한 재동의를 진행하고 있습니다. <br />
+                        <span class="blue">2020년 12월 1일</span>부터 <span class="blue">2년 이상 재동의</span>를 하지 않은 회원의 개인정보를 다음과 같이 <span class="red">자동 삭제</span> 처리합니디.
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <input type="radio" id="click08" name="board">
+                <div class="fl"><span class="new">NEW</span></div>
+                <div class="fl title left"> <label for="click08">코로나19 재택치료 안내문과 Q&A</label></div>
+                <div class="fl">2022-02-18</div>
+                <div class="fl">331</div>
+                <div class="fl">주민자치과</div>
+                <div class="content_wrap">
+                    <div class="subject">코로나19 재택치료자 구분</div>
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td class="bold">구분</td>
+                                <td class="bold">집중관리군</td>
+                                <td class="bold">일반관리군</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">대상</td>
+                                <td>60세 이상 <br> 50대 이상 고위험,기저질환자 <br> 면역저하자</td>
+                                <td>집중관리군 이외 확진자</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">제공물품</td>
+                                <td>재택치료키트</td>
+                                <td>재택치료키트(소아확진자에 한함)</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">병원안내</td>
+                                <td>기 매칭 병원</td>
+                                <td>건강보험심사평가원 홈페이지 확인</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">격리기간</td>
+                                <td colspan="2">검체채취일로부터 7일째되는 날 24시</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">격리통지서</td>
+                                <td colspan="2">확진 안내문자 발송 후 3~4일 후 문자 발송</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">외출여부</td>
+                                <td colspan="2">불가</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix">
+                <input type="radio" id="click07" name="board">
+                <div class="fl">3581</div>
+                <div class="fl title left"> <label for="click07">2022년 성남시 전기승용차 보급</label></div>
+                <div class="fl">2022-02-17</div>
+                <div class="fl">470</div>
+                <div class="fl">기후에너지과</div>
+                <div class="content_wrap">
+                    <div class="subject">전기승용처 보급 사업공고</div>
+                    <div class="content">
+                        1. 신청기간: 2022.2.25.(금) 10:00 ~ 12.09.(금) 18:00 <br>
+                        2. 지원대수: 920대 (우선순위92, 법인.기관276, 택시92, 일반460) <br>
+                        3. 지원차종: 무공해차 통합누리집(www.ev.or.kr)게재 차량 <br>
+                        4. 지원금액: 승용 402만원-1,100만원, 초소형 650만원 정액 <br>
+                        5. 지원대상: 신청 전 성남시 거주 3개월 이상 개인, 사업자, 법인, 단체, 공공기관, 지방공기업 등 <br>
+                        6. 기타사항: 궁금한 사항은 성남시청 기후에너지과(031-729-3162~3)로 문의하시기 바라며, 자세한 내용은 공고문을 확인하시기 바랍니다.
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix">
+                <input type="radio" id="click06" name="board">
+                <div class="fl">3580</div>
+                <div class="fl title left"><label for="click06">2022년 제1기 청년정책협의체 활동가 모집 공고</label></div>
+                <div class="fl">2022-02-17</div>
+                <div class="fl">270</div>
+                <div class="fl">청년정책과</div>
+                <div class="content_wrap">
+                    <div class="subject">청년정책협의체 활동가 모집 공고</div>
+                    <div class="content">
+                        청년정책을 함께 발굴하며 시정에 참여하는 기회를 보장하기 위하여 「제1기 성남시 청년정책협의체 활동가 모집」을 아래와 같이 공고하고자 합니다.
+                        <br />
+                        <span class="bold">인원</span>: 100명 내외<br />
+                        <span class="bold">모집기간</span>: 2022. 2. 21.(월) ~ 3.13.(일)(21일간)<br />
+                        <span class="bold">대상</span>: 성남시 거주 또는 활동(재학, 재직, 단체)하는 만19세~34세 청년<br />
+                        <span class="bold">기능</span>: 청년정책 제안 및 모니터링, 청년 의견수렴, 청년정책 홍보 및 취재, 청년단체교류, 문화행사기획 등<br />
+                        <span class="bold">혜택</span>: 위촉장 수여, 활동비 지원, 우수 활동가 시장 표창<br />
+                        <span class="bold">제출서류</span>: 지원신청서, 개인정보동의서 <br />
+                        <span class="bold">신청</span>: 온라인 지원신청(http://naver.me/xKNs8cmb),
+                        또는 제출서류 작성후 이메일(esther79@korea.kr) 제출<br />
+                         ※ 참여혜택, 활동 세부 사항, 선정방법 등은 붙임 공고문 확인
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <input type="radio" id="click05" name="board">
+                <div class="fl">3579</div>
+                <div class="fl title left"> <label for="click05">2022년도 과학기술정보통신부 디지털 뉴딜 사업설명회 개최 안내</label></div>
+                <div class="fl">2022-02-17</div>
+                <div class="fl">75</div>
+                <div class="fl">정책기획과</div>
+                <div class="content_wrap">
+                    <div class="subject">디지털 뉴질 사업설명회</div>
+                    <div class="content">
+                        과학기술정보통신부에서 2022년 디지털 뉴딜 주요 공모사업의 내용, 일정 등을 소개하고 기업, 기관, 지자체 등의 참여를 독려하기 위해 &lt;2022년 과학기술정보통신부 디지털 뉴달 사업설명회&gt;를 아래와 같이 개최할 예정입니다. <br />
+                        1. 일시/장소: 2022.02.17. (목) 14:00~16:50/ 온라인 개최(네이버TV, 카카오TV, 유튜브) <br />
+                        *채널명: NIA TV1 (한국지능저보사회진흥원) <br />
+                        2. 참여대상: 산·학·연 등 <span class="bold">디지털 뉴딜사업에 관심있는 국민 누구나</span> <br />
+                        3. 행사내용: 과기정통부 소관 디지털 뉴딜 주요 사업내용, 추진방식, 공모 일정 등 소개 <br />
+                        향후 관계부처 합동 디지털 뉴딜 사업설명회 개최 예정(3월초)
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <input type="radio" id="click04" name="board">
+                <div class="fl">3578</div>
+                <div class="fl title left"><label for="click04">2022년 성남문화예술인 및 단체 창작공간 임차료 지원 공고</label></div>
+                <div class="fl">2022-02-17</div>
+                <div class="fl">125</div>
+                <div class="fl">문화예술과</div>
+                <div class="content_wrap">
+                    <div class="subject">성남문화예술인 및 단체 창작공간 임차료 지원 공고</div>
+                    <div class="content">
+                        ○ 공 모 명 : 2022년 성남문화예술인 및 단체 창작공간 임차료 지원 <br />
+                        ○ 지원자격<br />
+                        - 개 인 : 예술활동증명 완료하고 주소지가 성남인 예술인 <br />
+                        - 단 체 : 단체등록증을 소지하고 성남시 소재하는 예술단체 <br />
+                        ○ 지원내용 : 성남시 소재 창작공간 월 임차료의 50%까지 지원, 월 최대 50만원, 8개월간 지원 <br />
+                        ○ 공고기간 : 2021. 2. 14.(월) ~ 3. 18.(금)<br />
+                        ○ 접수기간 : 2022. 3. 14.(월) ~ 3. 18.(금)17:00까지 <br />
+                        ○ 접수방법 : e-mail 접수(snart10@snart.or.kr) <br />
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <input type="radio" id="click03" name="board">
+                <div class="fl">3577</div>
+                <div class="fl title left"><label for="click03">(코로나19 자가진단키드 관련) 공증보건 위기대응 의료재품 유통개선 조치 등 알림</label></div>
+                <div class="fl">2022-02-16</div>
+                <div class="fl">308</div>
+                <div class="fl">보건행정과</div>
+                <div class="content_wrap">
+                    <div class="subject">위기대응 의료제품 유통개선조치</div>
+                    <div class="content">
+                        □ 유통개선조치 사항 <br />
+                        ○ (법률 근거)「공중보건 위기대응법」제19조 <br /> 
+                        ○ (조치 대상자) 의료기기 제조업자, 약국, 편의점, 판매업자(도매상 및 체인공급업자)<br />
+                        * 의료기기 판매업자(의약품 도매상 포함) 중 도매상<br />
+                        ○ (조치 대상 제품) 위기대응 의료제품으로 지정된 ‘코로나19 검사를 위한 항원검사 방식의 진단시약’ 중 개인용,전문가용 제품<br />
+                        ○ (유통개선 조치 내용)<br />
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <input type="radio" id="click02" name="board">
+                <div class="fl">3576</div>
+                <div class="fl title left"><label for="click02">[판교청년지원센터]&lt;2022 겹겹의 취향&gt; 모집공고</label></div>
+                <div class="fl">2022-02-15</div>
+                <div class="fl">471</div>
+                <div class="fl">청년정책과</div>
+                <div class="content_wrap">
+                    <div class="subject">[판교청년지원센터]&lt;2022 겹겹의 취향&gt; 모집공고</div>
+                    <div class="content">
+                        &spades; 겹겹의 취향이란? <br />
+                        청년 모임 활성화를 위하여 각자의 분야에서 활동하는 청년 모임을 지원하는 프로그램입니다.<br />
+                        다양한 분야의 커뮤니티를 운영중인,
+                        혹은 커뮤니티를 만들어서 활동하고 싶은 청년들을 찾습니다!<br />
+                        겹겹이 취향을 쌓아보아요.<br />
+                        &spades; 모집 일정<br />
+                        - 서류 접수 : ~3/1(화) <br />
+                        - 면접 진행 : 3/15(화) <br />
+                        - 최종 발표 : 3/18(금)
+                        <br />
+                        &spades; 모집 대상<br />
+                        - (모임장) 성남시 거주 혹은 활동 중인 만 19세~34세 청년<br />
+                        - 청년 모임을 운영, 계획 중인 3인 이상 팀<br />
+                        - 3월 ~ 11월 (9개월) 동안 꾸준히 지속적으로 모임활동을 운영하며 구성원 모집 할 수 있는 팀
+                        <br />
+                        &spades; 활동 기간<br />
+                        - 2022.03 ~ 2022.11 (약 8개월)<br />
+
+                        &spades; 문의 : 070-4139-2435, 카카오톡 채널 '성남시 청년지원센터 판교'
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <input type="radio" id="click01" name="board">
+                <div class="float">3575</div>
+                <div class="float title left"><label for="click01">경기도 미래세대를 위한 물환경 교육 실시 사업 공고</label></div>
+                <div class="float">2022-02-15</div>
+                <div class="float">133</div>
+                <div class="float">생태하천과</div>
+                <div class="content_wrap">
+                    <div class="subject">미래세대를 위한 물 환경 교육 지원사업 모집 공고</div>
+                    <div class="content">
+                        도민에게 경기도 주요하천의 자연,생태,역사,문화 등에 대한 다양한 체험 기회를 제공할 목적으로 추진하는 「2022년 미래세대를 위한 물 환경 교육 실시」사업에 참여할 법인(단체)를 다음과 같이 모집합니다. <br />
+
+                        붙 임 <br />
+                        1. 2022년 미래세대를 위한 물환경 교육 실시 사업 공고문 1부.<br />
+                        2.「문서24」서비스 이용자 가이드 1부.  끝.<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pager_wrap" class="clearfix">
+            <div class="float prev"><a href="#">&laquo;</a></div>
+            <div class="float num1"><a href="#">1</a></div>
+            <div class="float num2"><a href="#">2</a></div>
+            <div class="float num3"><a href="#">3</a></div>
+            <div class="float num4"><a href="#">4</a></div>
+            <div class="float num5"><a href="#">5</a></div>
+            <div class="float num6"><a href="#">6</a></div>
+            <div class="float num7"><a href="#">7</a></div>
+            <div class="float num8"><a href="#">8</a></div>
+            <div class="float num9"><a href="#">9</a></div>
+            <div class="float num10"><a href="#">10</a></div>
+            <div class="float next"><a href="#">&raquo;</a></div>
+        </div>
+
+        <div id="search_wrap" class="clearfix">
+                <div id="search_form">
+                    <div class="search">
+                        <select name="title" class="float">
+                            <option style="user-select: auto;">제목</option>
+                            <option value="날짜">날짜</option>
+                            <option value="작성자">작성자</option>
+                        </select>
+                        <input type="text" name="text" class="float">
+                        <span class="float"><a href="#">검색</a></span>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>

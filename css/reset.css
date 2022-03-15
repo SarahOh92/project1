@@ -1,0 +1,82 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body{
+    font-family:'맑은 고딕','Malgun Gothic','나눔고딕',NanumGothic,Helvetica,sans-serif;
+    line-height:1;
+    }    
+    
+article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section,div{
+    display:block;
+}
+    
+nav ul, li{
+    list-style:none;
+}
+    
+a{
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration:none;
+    color: #000;
+}
+
+
+img{
+    vertical-align:top;
+    }
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+input[type="text"], img, select {
+    vertical-align: middle;
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.blind {
+    overflow: hidden;
+    position: absolute;
+    top: -99999999em;
+    left: -9999999em;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    text-indent: -9999em;
+}
+
+.ir_pm {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999px;
+}

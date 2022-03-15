@@ -1,0 +1,710 @@
+@charset "UTF-8";
+
+#wrap {
+    width: 100%;
+    /* background-color: lightsteelblue; */
+    text-align: center;
+    /* font-size: 2.1em;
+    font-weight: bold; */
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+
+.blind {
+    overflow: hidden;
+    position: absolute;
+    top: -99999999em;
+    left: -9999999em;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    text-indent: -9999em;
+}
+.header {
+    width: 100%;
+    height: 250px;
+    /* background: rgba(0, 0, 0, 0.3); */
+    margin: 0 auto;
+}
+.header .header_top_line {
+    width: 100%;
+    height: 45px;
+    background-color: #e7e7e7;
+}
+
+.header_top_line .bn_box_wrap .council_site {
+    float: left;
+    width: 200px;
+    height: 45px;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+
+.header_top_line .bn_box_wrap .council_site a {
+    color: #333;
+    text-align: center;
+    width: 140px;
+    height: 45px;
+}
+
+.header_top_line .bn_box_wrap .bn_box {
+    float: left;
+    width: 297px;
+    height: 45px;
+    margin-left: 5px;
+}
+
+/* .bn_box img {
+    margin-left: 50px;
+} */
+
+.header .header_top_line .inner .login_box {
+    float: right;
+    width: 236px;
+    height: 45px;
+    line-height: 45px;
+    z-index: 2;
+}
+
+.login_area {
+    width: 131px;
+    height: 45px;
+}
+
+/* .login::after,.join::after {
+    content: '｜';
+} */
+
+.lang_list {
+    width: 105px;
+    height: 45px;
+}
+.language_btn {
+    border: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #fff;
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/lang_ico.png) no-repeat center left;
+    z-index: 2;
+    text-align: left;
+    color: #01244a;
+    margin: 0 0 0 22px;
+}
+
+.language_btn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    width: 8px;
+    height: 4px;
+}
+
+/* ------------- //.header_top_line ------------- */
+
+.header .header_logo_line {
+    height: 140px;
+    position: relative;
+}
+
+.header .header_logo_line .header_logo {
+    width: 150px;
+    height: 47px;
+    margin-top: 47px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header .header_logo_line .header_search {
+    max-width: 640px;
+    width: 640px;
+    height: 45px;
+    margin-left: 170px;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.search_box_wrap {
+    /* position: relative; */
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    z-index: 999;
+    margin: 0;
+}
+
+.search_animate_wrap {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.search_animate {
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 600%;
+    height: 100%;
+    background-color: #394dad;
+    background-image: linear-gradient(300deg, #97c9ff 0%, #3a9aba 20%, #394dad 40%, #97c9ff 60%, #3a9aba 80%, #394dad 100%);
+    animation: move 5s linear infinite;
+    transition: all 1200ms ease-in-out 0s;
+    z-index: 1;
+}
+
+.search_box {
+    /* position: relative; */
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.search_box .searchBox {
+    /* position: relative; */
+    padding: 37px 54px 6px 130px;
+    z-index: 9;
+    background-color: #fff;
+    border-radius: 7px;
+    box-sizing: border-box;
+    border: none;
+    /* border-radius: 27px 0 0 50px; */
+    box-sizing: border-box;
+    color: #000;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -1px;
+}
+
+.search_box .searchBox select {
+    /* position: absolute; */
+    top: 5px;
+    left: 5px;
+    width: 120px;
+    height: 34px;
+    margin: 0;
+    padding: 0 25px 0 10px;
+    border: 0;
+    border-radius: 50px 0 0 50px;
+    box-sizing: border-box;
+    color: #000;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -1px;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.keyword_area {
+    position: relative;
+    width: 100%;
+    top: 15px;
+}
+
+.keyword_area h5 {
+    float: left;
+    margin: 0 18px 0 22px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+}
+
+.keyword_slider_btn {
+    position: absolute;
+    top: -1px;
+    right: 20px;
+}
+
+.keyword_slider_btn li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.keyword_area .bx_wrapper {
+    float: left;
+    width: calc(100% -175px);
+}
+
+.bx_wrapper .bx_viewport li {
+    float: left;
+    margin-right: 20px;
+}
+
+.header .header_logo_line .weather_area {
+    /* position: absolute; */
+    top: -12px;
+    right: 260px;
+    text-align: left;
+    width: 250px;
+}
+
+.weather_box {
+    display: table-cell;
+    height: 140px;
+    vertical-align: middle;
+}
+
+.weather_box ul {
+    float: right;
+}
+
+.weather_box ul li {
+    float: left;
+    /* position: relative; */
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.weather_box ul li a {
+    display: inline-block;
+}
+
+.weather_box ul li a span {
+    font-size: 15px;
+    display: block;
+    color: #333;
+}
+
+.weather_box ul li a span.date {
+    padding-right: 18px;
+    text-align: right;
+}
+
+.weather_box ul li a span.thumb {
+    /* position: absolute; */
+    left: -19px;
+    top: 0px;
+}
+
+.weather_box ul li a span.temp {
+    display: block;
+    font-size: 15px;
+    padding-left: 36px;
+    padding-top: 10px;
+}
+
+.weather_box ul li a span.temp em.tempnum {
+    font-size: 18px;
+    margin: 0 3px 0 5px;
+}
+
+.weather_area #airstatuspopup {
+    padding-left: 15px;
+}
+
+.weather_area .figure>img {
+    margin-right: 3px;
+    vertical-align: -10px;
+}
+
+.weather_area ul li a span.more {
+    /* position: absolute; */
+    top: 5px;
+    right: 0;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -999999px;
+    white-space: nowrap;
+}
+
+/* ----------- //.header_logo_line ----------- */
+
+.header .gnb_area {
+    height: 50px;
+    position: relative;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+/* .gnb {
+    width: 100%;
+} */
+
+.header .gnb_area .gnbNav {
+    height: 50px;
+    text-align: center;
+    /* position: relative; */
+    padding-right: 250px;
+    padding-left: 240px;
+}
+
+/* .gnb_area .gnbNav .gnb {
+    position: relative;
+} */
+
+.gnb div ul li {
+    padding: 0 10px 35px;
+}
+
+.header .gnb_area .gnbNav .gnb li {
+    float: left;
+    width: 16%;
+    height: 100%;
+    line-height: 50px;
+    display: block;
+}
+
+.width100 {
+    width: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 10;
+    left: 0;
+    top: 50px;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.m_width {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.gnb li a {
+    display: block;
+    line-height: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+/* ==================== */
+.gnb li:hover .width100 {
+    height: auto;
+    padding: 20px 0;
+    box-shadow: 0 2px 2px rgba(0,0,0,.5);
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.gnb li .width100 li a {
+    border: 1px solid #666;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.gnb li .width100 li dl dd {
+    text-align: left;
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+dt,dd {
+    line-height: 1.2rem;
+}
+
+dt {
+    display: block;
+}
+
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+
+.main_sitemap {
+    position: absolute;
+    z-index: 101;
+    right: 114px;
+    top: -5px;
+}
+
+.main_sitemap a span {
+    display: inline-block;
+    position: absolute;
+    left: 12.5px;
+    width: 25px;
+    height: 3px;
+    background: #000;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+/* ------------------ //.gnb_area ---------------- */
+
+.contents {
+    /* background-color: aliceblue; */
+    max-width: 1400px;
+}
+
+.content1 {
+    width: 100%;
+    padding-top: 30px;
+    /* background: rgba(0, 0, 0, 0.3); */
+    /* margin: 0 auto; */
+}
+/* main_bn_area */
+.main_bn_area {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 425px;
+}
+
+.main_bn_control {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 3px 10px;
+    overflow: hidden;
+    background-color: #394f79;
+    box-sizing: border-box;
+}
+
+.bn_thumb_slider_btn {
+    font-size: 0;
+    float: left;
+    padding-top: 2px;
+}
+
+.bn_thumb_slider_btn li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bn_thumb_slider_btn #slide_counter01 {
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.bn_thumb_slider_btn #slide_counter01 .current_index {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bn_thumb_slider_btn .slider_prev {
+    display: block;
+}
+
+.bn_thumb_slider_btn .slider_play {
+    display: none;
+}
+
+.bn_thumb_slider_btn .slider_next {
+    display: block;
+}
+
+/* mayor_area */
+.mayor_area {
+    float: left;
+    width: 650px;
+    margin-left: 30px;
+}
+
+.mayor_visual {
+    position: relative;
+    min-height: 310px;
+    padding: 60px 20px 0;
+    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/mayor_bg.jpg) no-repeat top center;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+
+.mayor_visual p {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.mayor_visual>ul {
+    overflow: hidden;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 130px;
+}
+
+.mayor_visual>ul>li {
+    float: left;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.mayor_visual>ul>li:nth-child(1) {
+    margin-right: 5px;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+.mayor_visual>ul>li>a {
+    display: block;
+    width: 155px;
+    height: 45px;
+    line-height: 45px;
+    color: #495cb3;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mayor_visual>ul>li>a>span {
+    position: relative;
+    padding-right: 31px;
+}
+
+.mayor_visual>ul>li>a>span::after {
+    display: block;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/mayor_main_arr.png);
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+}
+
+.mayor_link {
+    border: 1px solid #dcdcdc;
+    border-top: 0;
+}
+
+.mayor_link>ul {
+    overflow: hidden;
+}
+
+.mayor_link>ul>li {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+
+.mayor_link>ul>li>a {
+    display: block;
+    padding: 28px 207px 28px 5px;
+    color: #333;
+    font-size: 15px;
+}
+
+.mayor_link>ul>li>a>span {
+    display: inline-block;
+    position: absolute;
+}
+
+.mayor_link>ul>li>a>span::before {
+    content: '';
+    display: inline;
+    padding: 2px 0 2px 28px;
+    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/ico_mayor_1.png) 0 50% no-repeat;
+}
+
+.mayor_link>ul>li:nth-child(2)>a>span::before {
+    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/ico_mayor_2.png) 1px 50% no-repeat;
+}
+
+.mayor_link>ul>li:nth-child(3)>a>span::before {
+    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/ico_mayor_3.png) 2px 50% no-repeat;
+}
+
+.mayor_link>ul>li:nth-child(4)>a>span::before {
+    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/ico_mayor_4.png) 0 50% no-repeat;
+}
+
+.mayor_link>ul>li:nth-child(5)>a>span::before {
+    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/ico_mayor_5.png) 0 50% no-repeat;
+}
+
+.mayor_link>ul>li:nth-child(6)>a>span::before {
+    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/ico_mayor_6.png) 3px 50% no-repeat;
+}
+
+.mayor_link>ul>li>a>span::after {
+    content: "";
+    position: absolute;
+    left: 26px;
+    right: -2px;
+    bottom: 2px;
+    height: 8px;
+    background-color: #91a1ee;
+    opacity: 0.07;
+}
+
+.mayor_link>ul>li>a>span span {
+    position: relative;
+    z-index: 1;
+}
+
+.mayor_link>ul>li>a b {
+    font-weight: normal;
+}
+
+.content2 {
+    width: 100%; 
+    height: 200px; 
+    background: rgba(0, 0, 0, 0.3);
+    /* margin: 0 auto; */
+}
+.content3 {
+    width: 100%; 
+    height: 500px; 
+    background: rgba(0, 0, 0, 0.3);
+    /* margin: 0 auto; */
+}
+.content4 {
+    width: 100%; 
+    height: 400px; 
+    background: rgba(0, 0, 0, 0.3); 
+    /* margin: 0 auto; */
+}
+
+.footer_familysite {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    /* margin: 0 auto; */
+}
+
+.footer-inner {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    /* margin: 0 auto; */
+}
+
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    /* height: inherit; */
+    /* background-color: #eaf5ff; */
+    /* opacity: 0.5; */
+    overflow: hidden;
+}
+
