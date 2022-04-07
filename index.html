@@ -5,13 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>성남시청</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Infant:700,700italic|Lato:400,400italic,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="lib/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcot icon" href="images/ico_sns_favicon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="js/detectmobilebrowser.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tab.js"></script>
 </head>
 <body>
     <div id="wrap">
         <div id="skip">
-            <div id="header">
+            <div id="header top">
                 <div class="header_top_line">
                     <div class="inner clearfix">
                         <div class="council_site fl">
@@ -502,30 +518,26 @@
                 <div class="group1">
                     <div class="group1_area inner clearfix">
                         <div class="mainbn_area fl">
-                            <div class="mainbn_box">
-                                <ul class="clearfix">
-                                    <li>
-                                        <a href="#">
-                                            <img src="../project1/images/bn_img.jpg" alt="제20대 대통령선거 확정 선거인명부 열람 2022.2.26(토)~3.9(수)">
-                                        </a>
-                                    </li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
+                            <div id="brandVisual" class="mainbn_box">
+                                <ul class="visual_slide">
+                                    <li class="visual_0"><a href="#">배너이미지1</a></li>
+                                    <li class="visual_1"><a href="#">배너이미지2</a></li>
+                                    <li class="visual_2"><a href="#">배너이미지3</a></li>
+                                    <li class="visual_3"><a href="#">배너이미지4</a></li>
+                                    <li class="visual_4"><a href="#">배너이미지5</a></li>
+                                    <li class="visual_5"><a href="#">배너이미지6</a></li>
+                                    <li class="visual_6"><a href="#">배너이미지7</a></li>
+                                    <li class="visual_7"><a href="#">배너이미지8</a></li>
+                                    <li class="visual_8"><a href="#">배너이미지9</a></li>
+                                    <li class="visual_9"><a href="#">배너이미지10</a></li>
                                 </ul>
                             </div>
                             <div class="main_bn_control clearfix">
                                 <ul class="main_bn_slider_btn fl">
                                     <li>
                                         <div class="main_bn_slider_counter fl">
-                                            <span>1</span>
-                                            /11
+                                            <span class="slick">1</span>
+                                            /10
                                         </div>
                                     </li>
                                     <li><a href="#" class="slider_prev fl ir_pm">이전</a></li>
@@ -604,109 +616,175 @@
                 <!-- // group1 -->
                 <div class="group2">
                     <div class="group2_area inner clearfix">
-                        <div class="noticelist_area fl">
-                            <div class="notice_tab clearfix">
-                                <div class="tab_menu on fl">
-                                    <a href="#">새소식</a>
-                                </div>
-                                <div style="display: block;">
-                                    <a href="#" class="notice_tab_more fl"></a>
-                                    <ul class="news_list clearfix">
-                                        <li class="fl">
-                                            <div class="date_rbt fl">
-                                                <strong>03</strong>
-                                                2022.05
-                                            </div>
-                                            <div class="news_tit fl">
-                                                <a href="#">
-                                                    <p class="txt_tit">(공동주택 분양) 「오산 세교2지구 A13블록 호반써밋 민간분양 사전청약」 장애인 특별공급 안내</p>
-                                                    <p class="txt_con">- 본 사전청약의 기관추천 선정자는 주택입주 예약자의 지ㅣ위를 갖기되며(분양권은 본청약 이후 획득)</p>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="fl">
-                                            <a href="#" class="clearfix">
-                                                <p class="txt_sub fl">(공동주택 분양) 「이천 백사 1블록 신안실크밸리」장애인 특별공급 안내</p>
-                                                <p class="txt_date fr">2022.03.04</p>
-                                            </a>
-                                        </li>
-                                        <li class="fl">
-                                            <a href="#" class="clearfix">
-                                                <p class="txt_sub fl">2022년 「성남시 모법개인납세자」당첨자 명단</p>
-                                                <p class="txt_date fr">2022.03.04</p>
-                                            </a>
-                                        </li>
-                                        <li class="fl">
-                                            <a href="#" class="clearfix">
-                                                <p class="txt_sub fl">2022년 "돌봄 취약가구" 반려동물 의료비 지원 실시 공고</p>
-                                                <p class="txt_date fr">2022.03.04</p>
-                                            </a>
-                                        </li>
-                                        <li class="fl">
-                                            <a href="#" class="clearfix">
-                                                <p class="txt_sub fl">공군 15비 한시임기제군무원(군수 7호) 채용 공고 안내</p>
-                                                <p class="txt_date fr">2022.03.03</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="tab_menu fl">
-                                    <a href="#">채용시험</a>
-                                </div>
-                                <div style="display: none;">
-                                    <a href="#" class="notice_tab_more fl"></a>
-                                    <ul class="news_list clearfix">
-                                        <li class="fl">
-                                            <div class="date_rbt fl">
-                                                <strong>28</strong>
-                                                2022.02.
-                                            </div>
-                                            <div class="news_tit fl">
-                                                <a href="#">
-                                                    <p class="txt_tit">1개마을1개텃밭 가꾸기 기간제근로자 채용 공고</p>
-                                                    <p class="txt_con">성남시농업기술센터 1개마을1개텃밭 가꾸기 기간제 근로자를 모집합니다.</p>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="fl">
-                                            <a href="#" class="clearfix">
-                                                <p class="txt_sub fl">성남시청 구내식당 기간제근로자(조리원) 채용 공고</p>
-                                                <p class="txt_date fr">2022.02.28</p>
-                                            </a>
-                                        </li>
-                                        <li class="fl">
-                                            <a href="#" class="clearfix">
-                                                <p class="txt_sub fl">성남도시개발공사 국민체육센터 기간제근로자 채용공고</p>
-                                                <p class="txt_date fr">2022.02.25</p>
-                                            </a>
-                                        </li>
-                                        <li class="fl">
-                                            <a href="#" class="clearfix">
-                                                <p class="txt_sub fl">성남시다문화가족지원센터 방문교육(생활지도사) 채용</p>
-                                                <p class="txt_date fr">2022.02.24</p>
-                                            </a>
-                                        </li>
-                                        <li class="fl">
-                                            <a href="#" class="clearfix">
-                                                <p class="txt_sub fl">성남시다문화가족지원센터 통,번역 전담인력 채용</p>
-                                                <p class="txt_date fr">2022.02.24</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="tab_menu fl">
-                                    <a href="#">보도자료</a>
-                                </div>
-                                <div style="display: none;"></div>
-                                <div class="tab_menu fl">
-                                    <a href="#">구인정보</a>
-                                </div>
-                                <div style="display: none;"></div>
-                                <div class="tab_menu fl">
-                                    <a href="#">고시공고</a>
-                                </div>
+                        <div id="tabs">
+                            <ul class="clearfix notice_list">
+                              <li class="fl is_on"><a href="#tabs-1">새소식</a></li>
+                              <li class="fl"><a href="#tabs-2">채용시험</a></li>
+                              <li class="fl"><a href="#tabs-3">보도자료</a></li>
+                              <li class="fl"><a href="#tabs-4">구인정보</a></li>
+                              <li class="fl"><a href="#tabs-5">고시공고</a></li>
+                            </ul>
+                            <div id="tabs-1">
+                              <ul class="news_list clearfix">
+                                  <li class="fl">
+                                      <div class="date_rbt fl">
+                                          <strong>03</strong>
+                                          2022.05
+                                      </div>
+                                      <div class="news_tit fl">
+                                          <a href="#">
+                                              <p class="txt_tit">(공동주택 분양) 「오산 세교2지구 A13블록 호반써밋 민간분양 사전청약」 장애인 특별공급 안내</p>
+                                              <p class="txt_con">- 본 사전청약의 기관추천 선정자는 주택입주 예약자의 지ㅣ위를 갖기되며(분양권은 본청약 이후 획득)</p>
+                                          </a>
+                                      </div>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">(공동주택 분양) 「이천 백사 1블록 신안실크밸리」장애인 특별공급 안내</p>
+                                          <p class="txt_date fr">2022.03.04</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">2022년 「성남시 모법개인납세자」당첨자 명단</p>
+                                          <p class="txt_date fr">2022.03.04</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">2022년 "돌봄 취약가구" 반려동물 의료비 지원 실시 공고</p>
+                                          <p class="txt_date fr">2022.03.04</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">공군 15비 한시임기제군무원(군수 7호) 채용 공고 안내</p>
+                                          <p class="txt_date fr">2022.03.03</p>
+                                      </a>
+                                  </li>
+                              </ul>
                             </div>
-                        </div>
+                            <div id="tabs-2">
+                              <ul class="news_list clearfix">
+                                  <li class="fl">
+                                      <div class="date_rbt fl">
+                                          <strong>28</strong>
+                                          2022.02.
+                                      </div>
+                                      <div class="news_tit fl">
+                                          <a href="#">
+                                              <p class="txt_tit">1개마을1개텃밭 가꾸기 기간제근로자 채용 공고</p>
+                                              <p class="txt_con">성남시농업기술센터 1개마을1개텃밭 가꾸기 기간제 근로자를 모집합니다.</p>
+                                          </a>
+                                      </div>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">성남시청 구내식당 기간제근로자(조리원) 채용 공고</p>
+                                          <p class="txt_date fr">2022.02.28</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">성남도시개발공사 국민체육센터 기간제근로자 채용공고</p>
+                                          <p class="txt_date fr">2022.02.25</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">성남시다문화가족지원센터 방문교육(생활지도사) 채용</p>
+                                          <p class="txt_date fr">2022.02.24</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">성남시다문화가족지원센터 통,번역 전담인력 채용</p>
+                                          <p class="txt_date fr">2022.02.24</p>
+                                      </a>
+                                  </li>
+                              </ul>
+                            </div>
+                            <div id="tabs-3">
+                              <ul class="news_list clearfix">
+                                  <li class="fl">
+                                      <div class="date_rbt fl">
+                                          <strong>03</strong>
+                                          2022.05
+                                      </div>
+                                      <div class="news_tit fl">
+                                          <a href="#">
+                                              <p class="txt_tit">(공동주택 분양) 「오산 세교2지구 A13블록 호반써밋 민간분양 사전청약」 장애인 특별공급 안내</p>
+                                              <p class="txt_con">- 본 사전청약의 기관추천 선정자는 주택입주 예약자의 지ㅣ위를 갖기되며(분양권은 본청약 이후 획득)</p>
+                                          </a>
+                                      </div>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">(공동주택 분양) 「이천 백사 1블록 신안실크밸리」장애인 특별공급 안내</p>
+                                          <p class="txt_date fr">2022.03.04</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">2022년 「성남시 모법개인납세자」당첨자 명단</p>
+                                          <p class="txt_date fr">2022.03.04</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">2022년 "돌봄 취약가구" 반려동물 의료비 지원 실시 공고</p>
+                                          <p class="txt_date fr">2022.03.04</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">공군 15비 한시임기제군무원(군수 7호) 채용 공고 안내</p>
+                                          <p class="txt_date fr">2022.03.03</p>
+                                      </a>
+                                  </li>
+                              </ul>
+                            </div>
+                            <div id="tabs-4">
+                              <ul class="news_list clearfix">
+                                  <li class="fl">
+                                      <div class="date_rbt fl">
+                                          <strong>28</strong>
+                                          2022.02.
+                                      </div>
+                                      <div class="news_tit fl">
+                                          <a href="#">
+                                              <p class="txt_tit">1개마을1개텃밭 가꾸기 기간제근로자 채용 공고</p>
+                                              <p class="txt_con">성남시농업기술센터 1개마을1개텃밭 가꾸기 기간제 근로자를 모집합니다.</p>
+                                          </a>
+                                      </div>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">성남시청 구내식당 기간제근로자(조리원) 채용 공고</p>
+                                          <p class="txt_date fr">2022.02.28</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">성남도시개발공사 국민체육센터 기간제근로자 채용공고</p>
+                                          <p class="txt_date fr">2022.02.25</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">성남시다문화가족지원센터 방문교육(생활지도사) 채용</p>
+                                          <p class="txt_date fr">2022.02.24</p>
+                                      </a>
+                                  </li>
+                                  <li class="fl">
+                                      <a href="#" class="clearfix">
+                                          <p class="txt_sub fl">성남시다문화가족지원센터 통,번역 전담인력 채용</p>
+                                          <p class="txt_date fr">2022.02.24</p>
+                                      </a>
+                                  </li>
+                              </ul>
+                            </div>
+                          </div>
                         <!-- // noticelist_area -->
                         <div class="noticethumb_area fr">
                             <ul class="info_area clearfix">
@@ -725,13 +803,32 @@
                             </ul>
                             <div class="noticebn_area fl">
                                 <div class="noticebn_box fl">
-                                    <ul class="clearfix">
+                                    <ul class="autoplay clearfix">
                                         <li class="fl">
                                             <a href="#">
                                                 <img src="images/20220310093118491.jpg" alt="청년기본소득 1분기 신청하세요!">
                                             </a>
                                         </li>
-                                        <li class="fl"></li>
+                                        <li class="fl">
+                                            <a href="#">
+                                                <img src="images/20220214162341473.png" alt="코로나19 재택치료자 일반관리군 전화상담 안내">
+                                            </a>
+                                        </li>
+                                        <li class="fl">
+                                            <a href="#">
+                                                <img src="images/20220207110503549.jpg" alt="모든 아이는 모두의 아이다 아이들이 행복한 아동친화도시 성남,&lt;아동학대 예방도서&gt;발간">
+                                            </a>
+                                        </li>
+                                        <li class="fl">
+                                            <a href="#">
+                                                <img src="images/20220216162609485.jpg" alt="성남시 하늘누리 추모원 안치단 교체 교체기간 2022년 ~ 2023년(2년간) 순차교체">
+                                            </a>
+                                        </li>
+                                        <li class="fl">
+                                            <a href="#">
+                                                <img src="images/20211115142114691.png" alt="세상의 희망을 전하는 선한 영향력, 적십자회비">
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="noticebn_control fl">
@@ -746,11 +843,11 @@
                                         <li>
                                             <a href="#" class="slider_prev fl ir_pm">이전</a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="#" class="slider_stop fl">
                                                 <img src="images/notice_bn_stop.png" alt="">
                                             </a>
-                                        </li>
+                                        </li> -->
                                         <li>
                                             <a href="#" class="slider_next fl ir_pm">다음</a>
                                         </li>
@@ -1310,11 +1407,17 @@
                             <div class="mark_list fr"></div>
                         </div>
                     </div>
-                    <a href="index.html" id="back-to-top" class="visible">top</a>
                 </div>
             </div>
             <!-- ========== //#footer ============== -->
         </div>
+        <a id="back-to-top" href="index.html" class="top">top</a>
     </div>
+    <script src="js/script-slider-v1.0.js" charset="UTF-8"></script>
+    <script>
+        if(jQuery.browser.mobile == true){
+            location.href ="mobile/index.html"
+        }
+    </script>
 </body>
 </html>
