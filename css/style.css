@@ -1,4 +1,4 @@
-#brandVisual{position: relative;width: 720px;overflow: hidden;height:385px;}
+#brandVisual{position: relative;width: 720px;height:425px;}
 #brandVisual .visual_slide{width: 100%; height:100%;}
 #brandVisual .visual_slide li{position:absolute;background-repeat: no-repeat;background-position:50% 0;width:100%;height:100%;}
 #brandVisual .visual_slide li a{display: none; text-indent:-9999px;}
@@ -12,21 +12,7 @@
 #brandVisual .visual_7{background-image:url(../images/20220218110838696.png);}
 #brandVisual .visual_8{background-image:url(../images/20220221161253099.jpg);}
 #brandVisual .visual_9{background-image:url(../images/20220224084420008.jpg);}
-
-
-/* left */
-#brandVisual .visual_0{display:block; background-size:cover;}
-#brandVisual .visual_1{display:block; background-size:cover;}
-#brandVisual .visual_2{display:block; background-size:cover;}
-
-/* btnImg */
-.btnImg{position:relative;width:90%;margin:auto;top: -290px;}
-.btnImg img{width:30px;}
-.btnImg .prev{position: absolute; left:100px;}
-.btnImg .next{position: absolute; right:100px;}
-
-/* pager */
+#brandVisual .main_bn_slider_btn .slider_prev,#brandVisual .main_bn_slider_btn .slider_next{cursor: pointer;}
 .hidden{display:block; overflow: hidden; width:0; height: 0; line-height: 0; text-indent: -99999px;}
 #brandVisual .buttonList:after{content:''; display:block; clear:both;}
-#brandVisual .buttonList>li{background:url(../images1/btnVisual.png) no-repeat 0 -16px;width:14px;height:15px;overflow: hidden;margin:0 5px;position: relative;top:-135px;left:50%;float:left;cursor:pointer;}
 #brandVisual .buttonList>li.on{background-position:0 0;}

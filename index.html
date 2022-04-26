@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>성남시청</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Infant:700,700italic|Lato:400,400italic,700" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="lib/jquery.bxslider.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index1.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcot icon" href="images/ico_sns_favicon.png">
-    <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>성남시청</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="lib/bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcot icon" href="images/ico_sns_favicon.png">
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="js/detectmobilebrowser.js"></script>
     <script src="js/all.min.js"></script>
@@ -102,10 +100,6 @@
                         </div>
                         <div class="keyword_area fl">
                             <h5 class="fl">인기검색어</h5>
-                            <ul class="keyword_slider_btn">
-                                <li><a href="#" class="slider_prev fl ir_pm">이전</a></li>
-                                <li><a href="#" class="slider_next fr ir_pm">다음</a></li>
-                            </ul>
                             <div class="keyword_list fl">
                                 <div class="keyword_wrap">
                                     <div class="list_wrap claerfix">
@@ -117,7 +111,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="weather_box fr">
+                        <ul class="weather_box fr">
                             <li><a href="#" class="weather_status fl">
                                 <span class="date fl">03.02 17:55</span>
                                 <span class="more fl"></span>
@@ -142,7 +136,7 @@
                                     </span>
                                 </a>
                             </li>
-                        </div>
+                        </ul>
                     </div>
                 </div>
                 <div id="gnb_line">
@@ -531,30 +525,32 @@
                                     <li class="visual_8"><a href="#">배너이미지9</a></li>
                                     <li class="visual_9"><a href="#">배너이미지10</a></li>
                                 </ul>
-                            </div>
-                            <div class="main_bn_control clearfix">
-                                <ul class="main_bn_slider_btn fl">
-                                    <li>
-                                        <div class="main_bn_slider_counter fl">
-                                            <span class="slick">1</span>
-                                            /10
-                                        </div>
-                                    </li>
-                                    <li><a href="#" class="slider_prev fl ir_pm">이전</a></li>
-                                    <li>
-                                        <a href="#" class="slider_stop fl">
-                                            <img src="images/main_bn_stop.png" alt="일시정지">
+                                <div class="main_bn_control clearfix">
+                                    <ul class="main_bn_slider_btn fl">
+                                        <li>
+                                            <div class="main_bn_slider_counter fl">
+                                                <h5>알림마당</h5>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="main_bn_list_btn fr">
+                                        <a href="#">
+                                            목록보기
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="slider_next fl ir_pm">다음</a>
-                                    </li>
-                                </ul>
-                                <div class="main_bn_list_btn fr">
-                                    <a href="#">
-                                        목록보기
-                                    </a>
+                                    </div>
                                 </div>
+                                <ul class="buttonList">
+                                    <li class="on"><a href="#" class="hidden">배너1</a></li>
+                                    <li><a href="#" class="hidden">배너2</a></li>
+                                    <li><a href="#" class="hidden">배너3</a></li>
+                                    <li><a href="#" class="hidden">배너4</a></li>
+                                    <li><a href="#" class="hidden">배너5</a></li>
+                                    <li><a href="#" class="hidden">배너6</a></li>
+                                    <li><a href="#" class="hidden">배너7</a></li>
+                                    <li><a href="#" class="hidden">배너8</a></li>
+                                    <li><a href="#" class="hidden">배너9</a></li>
+                                    <li><a href="#" class="hidden">배너10</a></li>
+                                  </ul>
                             </div>
                         </div>
                         <!-- // mainbn_area -->
@@ -833,25 +829,6 @@
                                 </div>
                                 <div class="noticebn_control fl">
                                     <h5 class="fl">알림마당</h5>
-                                    <ul class="noticebn_slider fl">
-                                        <li>
-                                            <a href="#" class="noticebn_slider_counter fl">
-                                                <span>1</span>
-                                                /10
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="slider_prev fl ir_pm">이전</a>
-                                        </li>
-                                        <!-- <li>
-                                            <a href="#" class="slider_stop fl">
-                                                <img src="images/notice_bn_stop.png" alt="">
-                                            </a>
-                                        </li> -->
-                                        <li>
-                                            <a href="#" class="slider_next fl ir_pm">다음</a>
-                                        </li>
-                                    </ul>
                                     <div class="noticebn_list_btn fr">
                                     </div>
                                 </div>
@@ -864,18 +841,6 @@
                 <div class="group3">
                     <div class="service_area inner clearfix">
                         <h5 class="fl">자주찾는 서비스</h5>
-                        <ul class="serviceslider_btn fr">
-                            <li class="serviceslider_counter fl">
-                                <span>1</span>
-                                / 2
-                            </li>
-                            <li>
-                                <a href="#" class="slider_prev fl ir_pm">이전</a>
-                            </li>
-                            <li>
-                                <a href="#" class="slider_next fr ir_pm">다음</a>
-                            </li>
-                        </ul>
                         <div class="service_box fl">
                             <ul class="service_inner clearfix">
                                 <li class="fl">
@@ -1086,19 +1051,6 @@
                         <div class="sns_area fl">
                             <div class="sns_tit clearfix">
                                 <h5 class="fl">성남소식</h5>
-                                <ul class="sns_slider_btn fl">
-                                    <li>
-                                        <a href="#" class="slider_prev fl ir_pm">이전</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="slider_stop fl">
-                                            <img src="images/notice_bn_stop.png" alt="일시정지">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="slider_next fl ir_pm">다음</a>
-                                    </li>
-                                </ul>
                                 <ul class="sns_ico fr">
                                     <li>
                                         <a href="#">
@@ -1401,19 +1353,31 @@
                         <div class="addr_box fr">
                             <a href="#" class="callcenter_mark fl ir_pm">성남시콜센터 1577-3100</a>
                             <div class="adder fl">
-                                <address class="fl">우)13437 경기도 성남시 중원구 성남대로 997(여수동)</address>
+                                <address class="fl">우)123437 경기도 성남시 중원구 성남대로 997(여수동)</address>
                                 <cite class="fl">Copyright &copy; seongnam City. All Rights Reserved</cite>
                             </div>
                             <div class="mark_list fr"></div>
                         </div>
                     </div>
+                    <p>
+                        <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://green0703.dothome.co.kr/project1/project1/index.html">
+                            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="인증마크">
+                        </a>
+                    </p>
+                    <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                alt="올바른 CSS입니다!" />
+                            </a>
+                    </p>
                 </div>
             </div>
             <!-- ========== //#footer ============== -->
         </div>
         <a id="back-to-top" href="index.html" class="top">top</a>
     </div>
-    <script src="js/script-slider-v1.0.js" charset="UTF-8"></script>
+    
     <script>
         if(jQuery.browser.mobile == true){
             location.href ="mobile/index.html"

@@ -107,7 +107,6 @@
     width: 32px;
     height: 32px;
     text-indent: -9999px;
-    z-index: 9999;
   }
   .bx-wrapper .bx-controls-direction a.disabled {
     display: none;

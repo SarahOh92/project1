@@ -184,7 +184,7 @@ input {
     font-size: 17px;
     font-weight: bold;
     color: #000;
-    letter-spacing: -1;
+    letter-spacing: -1px;
     margin: 6px 0 0 6px;
     padding: 0 20px 0 5px;
 }
@@ -243,7 +243,6 @@ input {
 }
 .keyword_list {
     max-width: 100%;
-    width: calc(100%-175px);
 }
 .keyword_list .keyword_wrap {
     width: 100%;
@@ -623,7 +622,6 @@ input {
 }
 .mainbn_box ul {
     width: 100%;
-    height: 385px;
     position: absolute;
     top: 0;
     left: 0;
@@ -635,11 +633,14 @@ input {
 }
 .main_bn_control {
     width: 700px;
-    height: 34px;
+    height: 42px;
     padding: 3px 10px;
     background: #394f79;
+    position: absolute;
+    top: 383px;
 }
 .main_bn_slider_btn {
+    display: flex;
     width: 155px;
     height: 32px;
 }
@@ -648,24 +649,9 @@ input {
     color: #fff;
 }
 .main_bn_slider_counter {
-    width: 50px;
+    width: 78px;
     height: 30px;
     margin: 10px 8px 0 0;
-}
-.main_bn_slider_btn .slider_prev {
-    width: 11px;
-    height: 18px;
-    margin: 7px 8px;
-    background: url(../images/main_bn_prev.png);
-}
-.main_bn_slider_btn img {
-    margin: 8px;
-}
-.main_bn_slider_btn .slider_next {
-    width: 11px;
-    height: 18px;
-    margin: 7px 8px;
-    background: url(../images/main_bn_next.png);
 }
 .main_bn_list_btn a {
     display: block;
@@ -1071,18 +1057,6 @@ background: #3262b9;
     font-size: 16px;
     font-weight: 600;
 }
-.serviceslider_btn .slider_prev {
-    width: 24px;
-    height: 24px;
-    margin-top: 2px;
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/service_prev.png);
-}
-.serviceslider_btn .slider_next {
-    width: 24px;
-    height: 24px;
-    margin: 2px 2px 0;
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/main/service_next.png);
-}
 .service_box {
     margin-top: 20px;
     position: relative;
@@ -1477,7 +1451,11 @@ background: #3262b9;
     padding-bottom: 10px;
     border-bottom: 2px solid #000;
 }
-.sns_slider_btn {
+.sns_tit h5{
+    font-size: 20px;
+    line-height: 31px;
+}
+/* .sns_slider_btn {
     width: 75px;
     margin: 0px 0 0 10px;
 }
@@ -1498,7 +1476,7 @@ background: #3262b9;
     height: 15px;
     margin: 0 10px 0 5px;
     background: url(../images/notice_bn_next.png);
-}
+} */
 .sns_ico {
     width: 234px;
 }
