@@ -788,7 +788,7 @@ input {
 }
 #tabs .notice_list li{
     border: 1px solid #e7e7e7;
-    padding: 25px 41px;
+    padding: 25px 39px;
 }
 #tabs .notice_list li:first-child {
 background: #3262b9;
@@ -957,6 +957,14 @@ background: #3262b9;
     /* background: #394f79; */
     border-radius: 15px 15px 0 0;
     margin-top: 7px;
+}
+.notice_list li:last-child::after{
+    content: '';
+    background: url(../images/interlock_ico.png) no-repeat;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-size: cover;
 }
 .noticebn_box ul {
     width: 100%;
@@ -1738,14 +1746,8 @@ background: #3262b9;
     margin-top: -6px;
 }
 .addr_box {
-    width: 1170px;
-    position: relative;
-}
-.callcenter_mark {
-    width: 132px;
-    height: 61px;
-    margin-right: 18px;
-    background: url(../images/logo_callcenter.png) no-repeat;
+    width: 100%;
+    padding-left: 414px;
 }
 .addr {
     width: 380px;
@@ -1779,6 +1781,11 @@ background: #3262b9;
     position: absolute;
     top: -15px;
     left: 851px;
+}
+.mark_area{
+    display: flex;
+    justify-content: center;
+    padding: 13px 679px;
 }
 #back-to-top {
     position: fixed;

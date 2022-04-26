@@ -8,32 +8,28 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <title>성남시청</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="lib/bxslider.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcot icon" href="images/ico_sns_favicon.png">
-    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <link href="lib/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="shortcot icon" href="../images/ico_sns_favicon.png">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script src="js/detectmobilebrowser.js"></script>
-    <script src="js/all.min.js"></script>
+    <script src="../js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/tab.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/tab1.js"></script>
 </head>
 <body>
     <div id="wrap">
         <div id="skip">
-            <div id="top" class="header">
+            <div id="header top">
                 <div class="header_top_line">
-                    <div class="inner clearfix">
+                    <div class="clearfix">
                         <div class="council_site fl">
-                            <a href="#">성남시의회</a>
-                        </div>
-                        <div class="bn_box fl">
-                            <a href="#" title="새창에서 열림">
-                                <img src="images/220114_topbn_pc_1.jpg" alt="소기업/소상공인 방역물품비 지원 2022.2.14(월)-3.25(금)">
+                            <a href="#">
+                                <img src="../images/council.png" alt="성남시의회">
+                                성남시의회
                             </a>
                         </div>
                         <div class="right_area fr">
@@ -76,12 +72,15 @@
                         </div>
                 </div>
                 </div>
-                <div id="header_logo_line">
-                    <div class="inner clearfix">
+                <div class="header_logo_line">
+                    <div>
                         <h1>
-                            <a href="index.html" class="header_logo fl ir_pm">성남시청로고</a>
+                            <a href="index.html" class="header_logo ir_pm">
+                                <img src="../images/logo.png" alt="성남시청 로고">
+                                성남시청로고
+                            </a>
                         </h1>
-                        <div class="search_box_wrap fl">
+                        <div class="search_box_wrap">
                             <div class="search_box fl">
                                 <select name="collection" class="collection fl">
                                     <option value="all">통합검색</option>
@@ -98,8 +97,12 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="keyword_area fl">
+                        <div class="keyword_area">
                             <h5 class="fl">인기검색어</h5>
+                            <ul class="keyword_slider_btn">
+                                <li><a href="#" class="slider_prev fl ir_pm">이전</a></li>
+                                <li><a href="#" class="slider_next fr ir_pm">다음</a></li>
+                            </ul>
                             <div class="keyword_list fl">
                                 <div class="keyword_wrap">
                                     <div class="list_wrap claerfix">
@@ -111,19 +114,21 @@
                                 </div>
                             </div>
                         </div>
-                        <ul class="weather_box fr">
-                            <li><a href="#" class="weather_status fl">
-                                <span class="date fl">03.02 17:55</span>
-                                <span class="more fl"></span>
-                                <span class="thumb fl">
-                                    <img src="https://www.seongnam.go.kr/include/cmm_new/image/weather/w1.png" alt="맑음">
-                                </span>
-                                <span class="temp fl">
-                                    <strong>맑음
-                                        <em>˚C</em>
-                                    </strong>
-                                </span>
-                            </a></li>
+                        <div class="weather_box">
+                            <li>
+                                <a href="#" class="weather_status fl">
+                                    <span class="date fl">03.02 17:55</span>
+                                    <span class="more fl"></span>
+                                    <span class="thumb fl">
+                                        <img src="https://www.seongnam.go.kr/include/cmm_new/image/weather/w1.png" alt="맑음">
+                                    </span>
+                                    <span class="temp fl">
+                                        <strong>맑음 11
+                                            <em>˚C</em>
+                                        </strong>
+                                    </span>
+                                </a>
+                            </li>
                             <li>
                                 <a href="#" class="air_status fr">
                                     <span class="finedust fl">초미세먼지</span>
@@ -136,13 +141,13 @@
                                     </span>
                                 </a>
                             </li>
-                        </ul>
+                        </div>
                     </div>
                 </div>
-                <div id="gnb_line">
-                    <div class="inner">
+                <div class="gnb_line">
+                    <div>
                         <ul class="gnb_area clearfix">
-                            <li class="gnb1 fl">
+                            <!-- <li class="gnb1 fl">
                                 <a href="#">성남소개</a>
                                 <div class="width100">
                                     <ul class="m_width clearfix">
@@ -196,9 +201,9 @@
                                         <li class="fl"><a href="#" class="blank">성남시생활지도안내</a></li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> -->
                             <!-- // 성남소개 -->
-                            <li class="gnb2 fl">
+                            <!-- <li class="gnb2 fl">
                                 <a href="board/board.html">시정소식</a>
                                 <div class="width100">
                                     <ul class="m_width cf">
@@ -240,9 +245,9 @@
                                         <li class="fl"><a href="#">시정소식지비전성남</a></li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> -->
                             <!-- // 시정소식 -->
-                            <li class="gnb3 fl">
+                            <!-- <li class="gnb3 fl">
                                 <a href="#">전자민원</a>
                                 <div class="width100">
                                     <ul class="m_width clearfix">
@@ -296,9 +301,9 @@
                                         <li class="fl"><a href="#">고객상담콜센터</a></li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> -->
                             <!-- // 전자민원 -->
-                            <li class="gnb4 fl">
+                            <!-- <li class="gnb4 fl">
                                 <a href="#">시민참여</a>
                                 <div class="width100">
                                     <ul class="m_width clearfix">
@@ -399,9 +404,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> -->
                             <!-- //시민참여 -->
-                            <li class="gnb5 fl">
+                            <!-- <li class="gnb5 fl">
                                 <a href="#">정보공개</a>
                                 <div class="width100">
                                     <ul class="m_width clearfix">
@@ -467,9 +472,9 @@
                                         <li class="fl"><a href="#">자치법규</a></li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> -->
                             <!-- // 정보공개 -->
-                            <li class="gnb6 fl">
+                            <!-- <li class="gnb6 fl">
                                 <a href="#">분야별정보</a>
                                 <div class="width100">
                                     <ul class="m_width clearfix">
@@ -495,14 +500,14 @@
                                         <li class="fl"><a href="#">장래문화</a></li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="main_sitemap fl">
+                            </li> -->
+                            <!-- <li class="main_sitemap fl">
                                 <a href="#">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -525,39 +530,37 @@
                                     <li class="visual_8"><a href="#">배너이미지9</a></li>
                                     <li class="visual_9"><a href="#">배너이미지10</a></li>
                                 </ul>
-                                <div class="main_bn_control clearfix">
-                                    <ul class="main_bn_slider_btn fl">
-                                        <li>
-                                            <div class="main_bn_slider_counter fl">
-                                                <h5>알림마당</h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="main_bn_list_btn fr">
-                                        <a href="#">
-                                            목록보기
+                            </div>
+                            <div class="main_bn_control clearfix">
+                                <ul class="main_bn_slider_btn fl">
+                                    <li>
+                                        <div class="main_bn_slider_counter fl">
+                                            <span class="slick">1</span>
+                                            /10
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="slider_prev fl ir_pm">이전</a></li>
+                                    <li>
+                                        <a href="#" class="slider_stop fl">
+                                            <img src="images/main_bn_stop.png" alt="일시정지">
                                         </a>
-                                    </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="slider_next fl ir_pm">다음</a>
+                                    </li>
+                                </ul>
+                                <div class="main_bn_list_btn fr">
+                                    <a href="#">
+                                        목록보기
+                                    </a>
                                 </div>
-                                <ul class="buttonList">
-                                    <li class="on"><a href="#" class="hidden">배너1</a></li>
-                                    <li><a href="#" class="hidden">배너2</a></li>
-                                    <li><a href="#" class="hidden">배너3</a></li>
-                                    <li><a href="#" class="hidden">배너4</a></li>
-                                    <li><a href="#" class="hidden">배너5</a></li>
-                                    <li><a href="#" class="hidden">배너6</a></li>
-                                    <li><a href="#" class="hidden">배너7</a></li>
-                                    <li><a href="#" class="hidden">배너8</a></li>
-                                    <li><a href="#" class="hidden">배너9</a></li>
-                                    <li><a href="#" class="hidden">배너10</a></li>
-                                  </ul>
                             </div>
                         </div>
                         <!-- // mainbn_area -->
                         <div class="mayor_area fl">
                             <div class="mayor_visual">
                                 <p class="mayor_tit">
-                                    <img src="images/mayor_txt.png" alt="반갑습니다 성남시청 은수미입니다.">
+                                    <img src="../images/mayor_txt.png" alt="반갑습니다 성남시청 은수미입니다.">
                                 </p>
                                 <ul class="clearfix">
                                     <li class="fr">
@@ -579,7 +582,7 @@
                                             <span>시민과의약속</span>
                                         </a>
                                     </li>
-                                    <li class="fl">
+                                    <li class="fl clearfix">
                                         <a href="#">
                                             <div class="mayor_ico03 fl"></div>
                                             <span>은수미 핫라인</span>
@@ -591,7 +594,7 @@
                                             <span>성남시에 바라다</span>
                                         </a>
                                     </li>
-                                    <li class="fl">
+                                    <li class="fl clearfix">
                                         <a href="#">
                                             <div class="mayor_ico05 fl"></div>
                                             <span>행복소통청원</span>
@@ -610,231 +613,193 @@
                     </div>
                 </div>
                 <!-- // group1 -->
-                <div class="group2">
-                    <div class="group2_area inner clearfix">
+                <div class="group2 clearfix">
+                    <div class="group2_area inner">
                         <div id="tabs">
-                            <ul class="clearfix notice_list">
-                              <li class="fl is_on"><a href="#tabs-1">새소식</a></li>
-                              <li class="fl"><a href="#tabs-2">채용시험</a></li>
-                              <li class="fl"><a href="#tabs-3">보도자료</a></li>
-                              <li class="fl"><a href="#tabs-4">구인정보</a></li>
-                              <li class="fl"><a href="#tabs-5">고시공고</a></li>
+                            <ul class="notice_list">
+                              <li class="btn is_on"><a href="#tabs-1">새소식</a></li>
+                              <li class="btn"><a href="#tabs-2">채용시험</a></li>
+                              <li class="btn"><a href="#tabs-3">보도자료</a></li>
+                              <li class="btn"><a href="#tabs-4">구인정보</a></li>
+                              <li class="btn"><a href="#tabs-5">고시공고</a></li>
                             </ul>
-                            <div id="tabs-1">
-                              <ul class="news_list clearfix">
-                                  <li class="fl">
-                                      <div class="date_rbt fl">
-                                          <strong>26</strong>
-                                          2022.04
-                                      </div>
-                                      <div class="news_tit fl">
+                            <div class="content_area">
+                                <div id="tabs-1" class="cont">
+                                  <ul class="news_list">
+                                      <li>
+                                          <div class="date_rbt">
+                                              <strong>03</strong>
+                                              2022.05
+                                          </div>
+                                          <div class="news_tit">
+                                              <a href="#">
+                                                  <p class="txt_tit">(공동주택 분양) 「오산 세교2지구 A13블록 호반써밋 민간분양 사전청약」 장애인 특별공급 안내</p>
+                                                  <p class="txt_con">- 본 사전청약의 기관추천 선정자는 주택입주 예약자의 지ㅣ위를 갖기되며(분양권은 본청약 이후 획득)</p>
+                                              </a>
+                                          </div>
+                                      </li>
+                                      <li>
                                           <a href="#">
-                                              <p class="txt_tit">2022년 성남시 공적개발원조(ODA)사업 추가 모집 공고</p>
-                                              <p class="txt_con">- 개발도상국의 지속가능한 발전 및 복지증진을 실현하고 국제사회의 공동발전에 기여하기 위한 2022년 공적개발원조(ODA)사업의 추가 모집계획을 다음과 같이 공고합니다.</p>
+                                              <p class="txt_sub">(공동주택 분양) 「이천 백사 1블록 신안실크밸리」장애인 특별공급 안내</p>
+                                              <p class="txt_date">2022.03.04</p>
                                           </a>
-                                      </div>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">위해식품 등 긴급 회수 알림</p>
-                                          <p class="txt_date fr">2022.04.25</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">4월 4주 서울공항 야간비행 및 공포탄 사격훈련 일정 알림</p>
-                                          <p class="txt_date fr">2022.04.25</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">태그리스 버스 요금결제 서비스 시행 안내</p>
-                                          <p class="txt_date fr">2022.04.22</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">공군 15비 한시임기제군무원(군수 7호) 채용 공고 안내</p>
-                                          <p class="txt_date fr">2022.03.03</p>
-                                      </a>
-                                  </li>
-                              </ul>
-                            </div>
-                            <div id="tabs-2">
-                              <ul class="news_list clearfix">
-                                  <li class="fl">
-                                      <div class="date_rbt fl">
-                                          <strong>25</strong>
-                                          2022.04.
-                                      </div>
-                                      <div class="news_tit fl">
+                                      </li>
+                                      <li>
                                           <a href="#">
-                                              <p class="txt_tit">2022년 성남시청소년재단 (임시)수정청소년수련관 기간제근로자 채용공고</p>
-                                              <p class="txt_con">성남시청소년재단 (임시)수정청소년수련관에서는 기간제근로자(대체인력)을 다음과 같이 모집하오니 많은 관심과 지원 바랍니다.</p>
+                                              <p class="txt_sub">2022년 「성남시 모법개인납세자」당첨자 명단</p>
+                                              <p class="txt_date">2022.03.04</p>
                                           </a>
-                                      </div>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">성남시의료원(이사) 모집 공고</p>
-                                          <p class="txt_date fr">2022.04.25</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">성남시청소년재단 개방형임기직 채용 일정변경 및 전문계약직 채용재공고</p>
-                                          <p class="txt_date fr">2022.04.22</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">법원행정처(대법원 전산정보센터) 공무직근로자 채용재공고</p>
-                                          <p class="txt_date fr">2022.04.22</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">성남종합운동장 기간제근로자(라켓볼,골프강사) 채용 2차 재공고</p>
-                                          <p class="txt_date fr">2022.04.20</p>
-                                      </a>
-                                  </li>
-                              </ul>
-                            </div>
-                            <div id="tabs-3">
-                              <ul class="news_list clearfix">
-                                  <li class="fl">
-                                      <div class="date_rbt fl">
-                                          <strong>26</strong>
-                                          2022.04
-                                      </div>
-                                      <div class="news_tit fl">
+                                      </li>
+                                      <li>
                                           <a href="#">
-                                              <p class="txt_tit">성남시 종량제봉투 디자인 변경... 5월 1일부터 판매</p>
-                                              <p class="txt_con">- 성남시 종량제봉투 디자인 변경…5월 1일부터 판매</p>
+                                              <p class="txt_sub">2022년 "돌봄 취약가구" 반려동물 의료비 지원 실시 공고</p>
+                                              <p class="txt_date">2022.03.04</p>
                                           </a>
-                                      </div>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">성남시 '찾아가는 프렌즈 게임 랜드'4차원 VR 버스체험</p>
-                                          <p class="txt_date fr">2022.04.26</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">성남시, 올 하반기 공공근로 사업참여자 400명 모집</p>
-                                          <p class="txt_date fr">2022.04.26</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">성남시, 제5기 지역사회보장계획 수립을 위한</p>
-                                          <p class="txt_date fr">2022.04.25</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">-바르게! 건강하게! 똑똑하게! 우리는 건강지킴이-</p>
-                                          <p class="txt_date fr">2022.04.25</p>
-                                      </a>
-                                  </li>
-                              </ul>
-                            </div>
-                            <div id="tabs-4">
-                              <ul class="news_list clearfix">
-                                  <li class="fl">
-                                      <div class="date_rbt fl">
-                                          <strong>25</strong>
-                                          2022.04.
-                                      </div>
-                                      <div class="news_tit fl">
+                                      </li>
+                                      <li>
                                           <a href="#">
-                                              <p class="txt_tit">주간구인정보 알림(2022년 4월 4째주)</p>
-                                              <p class="txt_con">2022년 4월 4째주 성남,판교 일자리센터 구인정보를 붙임과 같이 알려드립니다.</p>
+                                              <p class="txt_sub">공군 15비 한시임기제군무원(군수 7호) 채용 공고 안내</p>
+                                              <p class="txt_date">2022.03.03</p>
                                           </a>
-                                      </div>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">주간구인정보 알림(2022년 4월 3째주)</p>
-                                          <p class="txt_date fr">2022.04.18</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">주간구인정보 알림(2022년 4월 2째주)</p>
-                                          <p class="txt_date fr">2022.04.11</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">주간구인정보 알림(2022년 4월 1째주)</p>
-                                          <p class="txt_date fr">2022.04.04</p>
-                                      </a>
-                                  </li>
-                                  <li class="fl">
-                                      <a href="#" class="clearfix">
-                                          <p class="txt_sub fl">주간구인정보 알림(2022년 3월 1째주)</p>
-                                          <p class="txt_date fr">2022.03.28</p>
-                                      </a>
-                                  </li>
-                              </ul>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div id="tabs-2" class="cont">
+                                  <ul class="news_list clearfix">
+                                      <li>
+                                          <div class="date_rbt">
+                                              <strong>28</strong>
+                                              2022.02.
+                                          </div>
+                                          <div class="news_tit">
+                                              <a href="#">
+                                                  <p class="txt_tit">1개마을1개텃밭 가꾸기 기간제근로자 채용 공고</p>
+                                                  <p class="txt_con">성남시농업기술센터 1개마을1개텃밭 가꾸기 기간제 근로자를 모집합니다.</p>
+                                              </a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <p class="txt_sub">성남시청 구내식당 기간제근로자(조리원) 채용 공고</p>
+                                              <p class="txt_date fr">2022.02.28</p>
+                                          </a>
+                                      </li>
+                                      <li >
+                                          <a href="#">
+                                              <p class="txt_sub">성남도시개발공사 국민체육센터 기간제근로자 채용공고</p>
+                                              <p class="txt_date">2022.02.25</p>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <p class="txt_sub fl">성남시다문화가족지원센터 방문교육(생활지도사) 채용</p>
+                                              <p class="txt_date">2022.02.24</p>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <p class="txt_sub fl">성남시다문화가족지원센터 통,번역 전담인력 채용</p>
+                                              <p class="txt_date">2022.02.24</p>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div id="tabs-3" class="cont">
+                                  <ul class="news_list">
+                                      <li>
+                                          <div class="date_rbt">
+                                              <strong>03</strong>
+                                              2022.05
+                                          </div>
+                                          <div class="news_tit">
+                                              <a href="#">
+                                                  <p class="txt_tit">(공동주택 분양) 「오산 세교2지구 A13블록 호반써밋 민간분양 사전청약」 장애인 특별공급 안내</p>
+                                                  <p class="txt_con">- 본 사전청약의 기관추천 선정자는 주택입주 예약자의 지ㅣ위를 갖기되며(분양권은 본청약 이후 획득)</p>
+                                              </a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <p class="txt_sub">(공동주택 분양) 「이천 백사 1블록 신안실크밸리」장애인 특별공급 안내</p>
+                                              <p class="txt_date">2022.03.04</p>
+                                          </a>
+                                      </li>
+                                      <li class="fl">
+                                          <a href="#">
+                                              <p class="txt_sub">2022년 「성남시 모법개인납세자」당첨자 명단</p>
+                                              <p class="txt_date">2022.03.04</p>
+                                          </a>
+                                      </li>
+                                      <li class="fl">
+                                          <a href="#">
+                                              <p class="txt_sub">2022년 "돌봄 취약가구" 반려동물 의료비 지원 실시 공고</p>
+                                              <p class="txt_date">2022.03.04</p>
+                                          </a>
+                                      </li>
+                                      <li class="fl">
+                                          <a href="#">
+                                              <p class="txt_sub">공군 15비 한시임기제군무원(군수 7호) 채용 공고 안내</p>
+                                              <p class="txt_date">2022.03.03</p>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div id="tabs-4" class="cont">
+                                  <ul class="news_list">
+                                      <li>
+                                          <div class="date_rbt">
+                                              <strong>28</strong>
+                                              2022.02.
+                                          </div>
+                                          <div class="news_tit">
+                                              <a href="#">
+                                                  <p class="txt_tit">1개마을1개텃밭 가꾸기 기간제근로자 채용 공고</p>
+                                                  <p class="txt_con">성남시농업기술센터 1개마을1개텃밭 가꾸기 기간제 근로자를 모집합니다.</p>
+                                              </a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <p class="txt_sub fl">성남시청 구내식당 기간제근로자(조리원) 채용 공고</p>
+                                              <p class="txt_date fr">2022.02.28</p>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <p class="txt_sub">성남도시개발공사 국민체육센터 기간제근로자 채용공고</p>
+                                              <p class="txt_date">2022.02.25</p>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <p class="txt_sub ">성남시다문화가족지원센터 방문교육(생활지도사) 채용</p>
+                                              <p class="txt_date">2022.02.24</p>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <p class="txt_sub fl">성남시다문화가족지원센터 통,번역 전담인력 채용</p>
+                                              <p class="txt_date">2022.02.24</p>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                </div>
                             </div>
-                            <div id="tabs-5">
-                                <ul class="news_list clearfix">
-                                    <li class="fl">
-                                        <div class="date_rbt fl">
-                                            <strong>25</strong>
-                                            2022.04.
-                                        </div>
-                                        <div class="news_tit fl">
-                                            <a href="#">
-                                                <p class="txt_tit">주간구인정보 알림(2022년 4월 4째주)</p>
-                                                <p class="txt_con">2022년 4월 4째주 성남,판교 일자리센터 구인정보를 붙임과 같이 알려드립니다.</p>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="fl">
-                                        <a href="#" class="clearfix">
-                                            <p class="txt_sub fl">주간구인정보 알림(2022년 4월 3째주)</p>
-                                            <p class="txt_date fr">2022.04.18</p>
-                                        </a>
-                                    </li>
-                                    <li class="fl">
-                                        <a href="#" class="clearfix">
-                                            <p class="txt_sub fl">주간구인정보 알림(2022년 4월 2째주)</p>
-                                            <p class="txt_date fr">2022.04.11</p>
-                                        </a>
-                                    </li>
-                                    <li class="fl">
-                                        <a href="#" class="clearfix">
-                                            <p class="txt_sub fl">주간구인정보 알림(2022년 4월 1째주)</p>
-                                            <p class="txt_date fr">2022.04.04</p>
-                                        </a>
-                                    </li>
-                                    <li class="fl">
-                                        <a href="#" class="clearfix">
-                                            <p class="txt_sub fl">주간구인정보 알림(2022년 3월 1째주)</p>
-                                            <p class="txt_date fr">2022.03.28</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                              </div>
                           </div>
                         <!-- // noticelist_area -->
                         <div class="noticethumb_area fr">
                             <ul class="info_area clearfix">
-                                <li class="fl">
+                                <li>
                                     <a href="#">조직도</a>
                                 </li>
-                                <li class="fl">
+                                <li>
                                     <a href="#">청사안내</a>
                                 </li>
-                                <li class="fl">
+                                <li>
                                     <a href="#">직원검색</a>
                                 </li>
-                                <li class="fl">
-                                    <a href="#">성남시민 맞춤복지</a>
+                                <li>
+                                    <a href="#">맞춤복지</a>
                                 </li>
                             </ul>
                             <div class="noticebn_area fl">
@@ -842,33 +807,47 @@
                                     <ul class="autoplay clearfix">
                                         <li class="fl">
                                             <a href="#">
-                                                <img src="images/20220310093118491.jpg" alt="청년기본소득 1분기 신청하세요!">
+                                                <img src="../images/20220310093118491.jpg" alt="청년기본소득 1분기 신청하세요!">
                                             </a>
                                         </li>
                                         <li class="fl">
                                             <a href="#">
-                                                <img src="images/20220214162341473.png" alt="코로나19 재택치료자 일반관리군 전화상담 안내">
+                                                <img src="../images/20220214162341473.png" alt="코로나19 재택치료자 일반관리군 전화상담 안내">
                                             </a>
                                         </li>
                                         <li class="fl">
                                             <a href="#">
-                                                <img src="images/20220207110503549.jpg" alt="모든 아이는 모두의 아이다 아이들이 행복한 아동친화도시 성남,&lt;아동학대 예방도서&gt;발간">
+                                                <img src="../images/20220207110503549.jpg" alt="모든 아이는 모두의 아이다 아이들이 행복한 아동친화도시 성남,&lt;아동학대 예방도서&gt;발간">
                                             </a>
                                         </li>
                                         <li class="fl">
                                             <a href="#">
-                                                <img src="images/20220216162609485.jpg" alt="성남시 하늘누리 추모원 안치단 교체 교체기간 2022년 ~ 2023년(2년간) 순차교체">
+                                                <img src="../images/20220216162609485.jpg" alt="성남시 하늘누리 추모원 안치단 교체 교체기간 2022년 ~ 2023년(2년간) 순차교체">
                                             </a>
                                         </li>
                                         <li class="fl">
                                             <a href="#">
-                                                <img src="images/20211115142114691.png" alt="세상의 희망을 전하는 선한 영향력, 적십자회비">
+                                                <img src="../images/20211115142114691.png" alt="세상의 희망을 전하는 선한 영향력, 적십자회비">
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="noticebn_control fl">
                                     <h5 class="fl">알림마당</h5>
+                                    <ul class="noticebn_slider">
+                                        <li>
+                                            <a href="#" class="noticebn_slider_counter fl">
+                                                <span>1</span>
+                                                /10
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="slider_prev ir_pm">이전</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="slider_next ir_pm">다음</a>
+                                        </li>
+                                    </ul>
                                     <div class="noticebn_list_btn fr">
                                     </div>
                                 </div>
@@ -879,8 +858,20 @@
                 </div>
                 <!-- // group2 -->
                 <div class="group3">
-                    <div class="service_area inner clearfix">
-                        <h5 class="fl">자주찾는 서비스</h5>
+                    <div class="service_area inner">
+                        <h5>자주찾는 서비스</h5>
+                        <ul class="serviceslider_btn">
+                            <li class="serviceslider_counter fl">
+                                <span>1</span>
+                                / 2
+                            </li>
+                            <li>
+                                <a href="#" class="slider_prev ir_pm">이전</a>
+                            </li>
+                            <li>
+                                <a href="#" class="slider_next ir_pm">다음</a>
+                            </li>
+                        </ul>
                         <div class="service_box fl">
                             <ul class="service_inner clearfix">
                                 <li class="fl">
@@ -955,7 +946,7 @@
                             <h5 class="fl">행사ㆍ강좌ㆍ공모</h5>
                             <a href="#" class="event_more fr">전체보기 +</a>
                         </div>
-                        <div class="event_list clearfix">
+                        <div class="event_list autoplay clearfix">
                             <div class="event_box fl">
                                 <div class="event_box_line">
                                     <div class="top"></div>
@@ -1091,6 +1082,19 @@
                         <div class="sns_area fl">
                             <div class="sns_tit clearfix">
                                 <h5 class="fl">성남소식</h5>
+                                <ul class="sns_slider_btn fl">
+                                    <li>
+                                        <a href="#" class="slider_prev fl ir_pm">이전</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="slider_stop fl">
+                                            <img src="images/notice_bn_stop.png" alt="일시정지">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="slider_next fl ir_pm">다음</a>
+                                    </li>
+                                </ul>
                                 <ul class="sns_ico fr">
                                     <li>
                                         <a href="#">
@@ -1390,24 +1394,13 @@
                             <li class="fl"><a href="#">청사안내</a></li>
                             <li class="fl"><a href="#">오시는길</a></li>
                         </ul>
-                        <div class="addr_box fl">
+                        <div class="addr_box fr">
+                            <a href="#" class="callcenter_mark fl ir_pm">성남시콜센터 1577-3100</a>
                             <div class="adder fl">
-                                <address class="fl">우)1234378 경기도 성남시 강남구 성남대로 (여수동)</address>
+                                <address class="fl">우)13437 경기도 성남시 중원구 성남대로 997(여수동)</address>
                                 <cite class="fl">Copyright &copy; seongnam City. All Rights Reserved</cite>
                             </div>
                             <div class="mark_list fr"></div>
-                        </div>
-                        <div class="mark_area fl">
-                            <p>
-                                <a href="https://sarahoh92.github.io/project1/" target="blank"><img src="https://www.w3.org/Icons/valid-html401" alt="HTML유효성 인증 마크"></a>
-                            </p>
-                            <p>
-                                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                                    <img style="border:0;width:88px;height:31px"
-                                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                                        alt="올바른 CSS입니다!" />
-                                </a>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -1416,11 +1409,13 @@
         </div>
         <a id="back-to-top" href="index.html" class="top">top</a>
     </div>
-    
-    <script>
-        if(jQuery.browser.mobile == true){
-            location.href ="mobile/index.html"
+    <script src="js/script-slider-v1.0.js" charset="UTF-8"></script>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src="../js/detectmobilebrowser.js"></script>
+    <!-- <script>
+        if(jQuery.browser.mobile == false){
+            location.href ="../index.html"
         }
-    </script>
+    </script> -->
 </body>
 </html>

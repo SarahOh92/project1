@@ -101,12 +101,12 @@ ul,ol,li {
     font-weight: 600;
     color: #01244a;
     padding: 0 12px 0 40px;
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/council.png) no-repeat center left 10px #fff;
+    background: url(../../images/council.png) no-repeat center left 10px #fff;
 }
 
 .council_site a::after {
     content: '';
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/blank_ico.png) no-repeat center right;
+    background: url(../../images/blank_ico.png) no-repeat center right;
     padding-right: 18px;
 }
 
@@ -129,7 +129,7 @@ ul,ol,li {
     width: 1px;
     height: 9px;
     margin: 23px 3px 0 0;
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/dotted_line.png) no-repeat center;
+    background: url(../../images/dotted_line.png) no-repeat center;
 }
 
 .language_area {
@@ -221,7 +221,7 @@ ul,ol,li {
     width: 139px;
     height: 47px;
     margin-top: 47px;
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/logo.png);
+    background: url(../../images/logo.png);
 }
 
 .search_box_wrap {
@@ -275,7 +275,6 @@ input {
     letter-spacing: -1;
     margin: 6px 0 0 6px;
     padding: 0 20px 0 5px;
-    background: #fff url(https://www.seongnam.go.kr/include/cmm_new/image/layout/main_select_ico.png) no-repeat center right 4px;
 }
 
 .keyword_input {
@@ -297,7 +296,7 @@ input {
 }
 
 .search_btn_ico {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/glass.png) no-repeat;
+    background: url(../../images/glass.png) no-repeat;
     width: 21px;
     height: 21px;
     margin: 9px 9px;
@@ -323,20 +322,6 @@ input {
     position: absolute;
     top: 1px;
     right: 17px;
-}
-
-.keyword_slider_btn .slider_prev {
-    width: 5px;
-    height: 10px;
-    margin-top: 5px;
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/search_prev.png);
-}
-
-.keyword_slider_btn .slider_next {
-    width: 5px;
-    height: 10px;
-    margin: 5px 7px 0 0;
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/search_next.png);
 }
 
 .keyword_list {
@@ -501,67 +486,51 @@ input {
 .gnb3 .m_width>li:nth-child(n+6) {
     height: auto;
 }
-
 .gnb4 .m_width>li:nth-child(n+1):nth-child(-n+3) {
     height: 314px;
 }
-
 .gnb4 .m_width>li:nth-child(1) ul, .gnb4 .m_width>li:nth-child(2) ul {
     width: 50%;
 }
-
 .gnb4 .m_width>li:nth-child(1),.gnb4 .m_width>li:nth-child(4),.gnb4 .m_width>li:nth-child(9) {
     margin-left: 0;
 }
-
 .gnb4 .m_width>li:nth-child(1),.gnb4 .m_width>li:nth-child(2) {
     width: 462px;
 }
-
 .gnb4 .m_width>li:nth-child(n+4):nth-child(-n+8) {
     height: 139px;
 }
-
 .gnb4 .m_width>li:nth-child(n+4):nth-child(-n+6) a, .gnb4 .m_width>li:nth-child(12) a {
     background: none;
 }
-
 .gnb4 .m_width>li:nth-child(n+9) {
     height: auto;
 }
-
 .gnb5 .m_width>li:nth-child(n+1):nth-child(-n+4) {
     height: 314px;
 }
-
 .gnb5 .m_width>li:nth-child(1), .gnb5 .m_width>li:nth-child(5) {
     margin-left: 0;
 }
-
 .gnb5 .m_width>li:nth-child(2) {
     width: 462px;
 }
-
 .gnb5 .m_width>li:nth-child(2) ul {
     width: 50%;
 }
-
 .gnb5 .m_width>li:nth-child(n+5) {
     height: auto;
 }
-
 .gnb5 .m_width>li:nth-child(n+5):nth-child(-n+9) a {
     background: none;
 }
-
 .gnb5 .m_width>li:nth-child(n+5):nth-child(-n+9) a {
     background: none;
 }
-
 .gnb_area .gnb6 .width100 {
     background: #f4f5f9;
 }
-
 .gnb_area .gnb6 .m_width>li>a {
     display: block;
     font-size: 15px;
@@ -589,78 +558,78 @@ input {
     margin-bottom: 10px;
 }
 .gnb_area .gnb6 .m_width>li:nth-child(1)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico01.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico01.png) no-repeat center;
 }
 .gnb_area .gnb6 .m_width>li:nth-child(2)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico02.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico02.png) no-repeat center;
 }
 .gnb_area .gnb6 .m_width>li:nth-child(3)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico13.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico13.png) no-repeat center;
 }
 .gnb_area .gnb6 .m_width>li:nth-child(4)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico03.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico03.png) no-repeat center;
 }
 .gnb_area .gnb6 .m_width>li:nth-child(5)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico04.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico04.png) no-repeat center;
 }
 .gnb_area .gnb6 .m_width>li:nth-child(6)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico05.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico05.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(7)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico06.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico06.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(8)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico07.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico07.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(9)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico08.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico08.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(10)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico09.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico09.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(11)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico10.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico10.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(12)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico11.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico11.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(13)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico12.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico12.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(14)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico14.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico14.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(15)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico15.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico15.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(16)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico16.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico16.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(17)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico17.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico17.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(18)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico18.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico18.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(19)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico19.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico19.png) no-repeat center;
 }
 
 .gnb_area .gnb6 .m_width>li:nth-child(20)>a::before {
-    background: url(https://www.seongnam.go.kr/include/cmm_new/image/layout/2021_gnb_ico20.png)no-repeat center;
+    background: url(../../images/2021_gnb_ico20.png) no-repeat center;
 }
 
 .main_sitemap a {
@@ -880,8 +849,8 @@ tr,td {
 }
 
 #search_wrap input {
-    height: 24px;
-    line-height: 22px;
+    height: 28px;
+    line-height: 28px;
     width: 210px;
 }
 
