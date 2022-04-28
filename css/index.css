@@ -783,20 +783,28 @@ input {
 }
 .group2 #tabs{
     width: 737px;
-    display: inline;
     float: left;
+    position: relative;
+}
+#tabs .notice_list{
+    overflow: hidden;
 }
 #tabs .notice_list li{
     border: 1px solid #e7e7e7;
     padding: 25px 39px;
+    cursor: pointer;
 }
-#tabs .notice_list li:first-child {
-background: #3262b9;
+
+#tabs .notice_list li.ui-state-active{
+    background-color: #1a56c5;
+    color: #fff;
+}
+#tabs .notice_list li.ui-state-active a{
+    color: #fff;
 }
 #tabs .notice_list li:first-child a {
-    color: #fff;
     font-weight: bold;
-    }
+}
 .news_list {
     width: 692px;
     top: 57px;
@@ -806,9 +814,7 @@ background: #3262b9;
     margin-top: 15px;
     width: 685px;
 }
-.news_list li a:hover p:nth-child(1) {
-    color: #3262b9;
-}
+.tab_menu .cont_area .cont{display:none; position:absolute;}
 .date_rbt {
     width: 81px;
     height: 60px;
