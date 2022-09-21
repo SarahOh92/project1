@@ -178,20 +178,21 @@ select,input {border: none;}
 .group2 {width: 100%;margin: 30px 0 30px 0;}
 .group2 #tabs{width: 737px;float: left;position: relative;}
 #tabs .notice_list{overflow: hidden;}
-#tabs .notice_list li{border: 1px solid #e7e7e7;margin-left: -1px;}
+#tabs .notice_list li{border: 1px solid #e7e7e7;margin-left: -1px;display: flex;}
 #tabs .notice_list li a{display:inline-block;padding: 25px 41px;}
 #tabs .notice_list li.ui-state-active{background-color: #1a56c5;}
 #tabs .notice_list li.ui-state-active a{color: #fff;}
 #tabs .notice_list li:first-child a {font-weight: bold;margin-left: 0;}
 .notice_list li:last-child a::after{content: '';background: url(../images/interlock_ico.png) no-repeat;width: 14px;height: 14px;display: inline-block;background-size: cover;margin-left: 5px;}
-.news_list {width: 692px;top: 57px;left: 0;}
+.news_list {width: 692px;display: flex;flex-direction: column;}
 .news_list li {margin-top: 15px;width: 685px;}
+.news_list li:first-child{display: flex;align-items: center;}
 .news_list li a{font-size: 17px;line-height: 28px;}
 .tab_menu .cont_area .cont{display:none; position:absolute;}
 .date_rbt {width: 81px;height: 60px;line-height: 31px;padding: 9px;border: 4px solid #ebebef;text-align: center;color: #bebebe;font-size: 16px;}
 .date_rbt strong {display: block;font-size: 35px;line-height: 35px;color: #000;}
 .news_tit {width: 570px;height: 58px;}
-.news_tit a {padding-left: 15px;}
+.news_tit a p{padding-left: 15px;}
 .noticelist_area a {display: block;font-size: 16px;line-height: 55px;text-align: center;}
 .txt_tit {font-size: 19px;font-weight: 600;line-height: 30px;text-align: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .txt_con {color: #666;text-align: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
